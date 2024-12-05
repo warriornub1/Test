@@ -1,4 +1,5 @@
 ﻿using CollegeApp.Model;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Xml.Linq;
 
@@ -80,6 +81,7 @@ namespace CollegeApp.Controllers
 
 
         [HttpDelete("{id:min(1):max(100)}", Name = "DeleteStudentById")]
+        // api/student/delete/1
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -162,5 +164,52 @@ namespace CollegeApp.Controllers
 
             return NoContent();
         }
+
+        [HttpPatch]
+        [Route("{id:int}/UpdatePartial")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+
+        /*
+         [
+          {
+            "path": "/studentName",
+            "op": "replace",
+            "value": "Anil New"
+          }
+        ]
+         */
+        public ActionResult UpdateStudentPartial(int id, [FromBody] JsonPatchDocument<StudentDTO> patchDocument)
+        {
+            if (patchDocument == null || id <= 0)
+                return BadRequest();
+
+            var existingStudent = CollegeRepository.Students.FirstOrDefault(x => x.Id == id);
+
+            if (existingStudent == null)
+                return NotFound();
+
+            var studentDTO = new StudentDTO
+            {
+                Id = existingStudent.Id,
+                StudentName = existingStudent.StudentName,
+                Email = existingStudent.Email,
+                Address = existingStudent.Address,
+            };
+
+            patchDocument.ApplyTo(studentDTO, ModelState);
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            existingStudent.StudentName = studentDTO.StudentName;
+            existingStudent.Email = studentDTO.Email;
+            existingStudent.Address = studentDTO.Address;
+
+            return NoContent();
+        }
+
     }
 }
