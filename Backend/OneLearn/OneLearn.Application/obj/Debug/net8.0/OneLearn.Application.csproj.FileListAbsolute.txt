@@ -1,0 +1,15 @@
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\bin\Debug\net8.0\OneLearn.Application.deps.json
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\bin\Debug\net8.0\OneLearn.Application.dll
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\bin\Debug\net8.0\OneLearn.Application.pdb
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\bin\Debug\net8.0\OneLearn.Domain.dll
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\bin\Debug\net8.0\OneLearn.Domain.pdb
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\OneLearn.Application.csproj.AssemblyReference.cache
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\OneLearn.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\OneLearn.Application.AssemblyInfoInputs.cache
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\OneLearn.Application.AssemblyInfo.cs
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\OneLearn.Application.csproj.CoreCompileInputs.cache
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\OneLearn.4B405362.Up2Date
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\OneLearn.Application.dll
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\refint\OneLearn.Application.dll
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\OneLearn.Application.pdb
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Application\obj\Debug\net8.0\ref\OneLearn.Application.dll

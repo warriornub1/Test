@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6FEDDDC-4325-4EB7-8D8E-87C6D359E13C}|CalculatorXUnit.csproj|c:\\users\\yongy\\source\\repos\\calculatorxunit\\calculatorxunit.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B6FEDDDC-4325-4EB7-8D8E-87C6D359E13C}|CalculatorXUnit.csproj|solutionrelative:calculatorxunit.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CF4F0F-68DF-40F1-8EBA-48765EEA89AB}|..\\Web1\\Web1.csproj|c:\\users\\yongy\\source\\repos\\web1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CF4F0F-68DF-40F1-8EBA-48765EEA89AB}|..\\Web1\\Web1.csproj|c:\\users\\yongy\\source\\repos\\web1\\web1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6FEDDDC-4325-4EB7-8D8E-87C6D359E13C}|CalculatorXUnit.csproj|c:\\users\\yongy\\source\\repos\\calculatorxunit\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6FEDDDC-4325-4EB7-8D8E-87C6D359E13C}|CalculatorXUnit.csproj|solutionrelative:unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CF4F0F-68DF-40F1-8EBA-48765EEA89AB}|..\\Web1\\Web1.csproj|c:\\users\\yongy\\source\\repos\\web1\\controller\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1FCEB22-AB88-4FE4-B231-7D52AF1CCCD1}|..\\Domain\\Domain.csproj|c:\\users\\yongy\\source\\repos\\domain\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculatorXUnit.csproj",
+              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\CalculatorXUnit.csproj",
+              "RelativeDocumentMoniker": "CalculatorXUnit.csproj",
+              "ToolTip": "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\CalculatorXUnit.csproj",
+              "RelativeToolTip": "CalculatorXUnit.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-08T05:21:05.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web1.csproj",
+              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\Web1\\Web1.csproj",
+              "RelativeDocumentMoniker": "..\\Web1\\Web1.csproj",
+              "ToolTip": "C:\\Users\\yongy\\source\\repos\\Web1\\Web1.csproj",
+              "RelativeToolTip": "..\\Web1\\Web1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-08T05:21:05.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalculatorController.cs",
+              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\Web1\\Controller\\CalculatorController.cs",
+              "RelativeDocumentMoniker": "..\\Web1\\Controller\\CalculatorController.cs",
+              "ToolTip": "C:\\Users\\yongy\\source\\repos\\Web1\\Controller\\CalculatorController.cs",
+              "RelativeToolTip": "..\\Web1\\Controller\\CalculatorController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T17:09:13.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\Web1\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Web1\\Program.cs",
+              "ToolTip": "C:\\Users\\yongy\\source\\repos\\Web1\\Program.cs",
+              "RelativeToolTip": "..\\Web1\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T17:07:36.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\Domain\\Calculator.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Calculator.cs",
+              "ToolTip": "C:\\Users\\yongy\\source\\repos\\Domain\\Calculator.cs",
+              "RelativeToolTip": "..\\Domain\\Calculator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:58:00.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UnitTest1.cs",
+              "ToolTip": "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\UnitTest1.cs",
+              "RelativeToolTip": "UnitTest1.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:53:16.254Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

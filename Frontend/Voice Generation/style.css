@@ -71,6 +71,21 @@ textarea::placeholder {
   gap: 1rem;
 }
 
+select {
+  flex: 1;
+  color: #fff;
+  background: #403d84;
+  height: 5rem;
+  padding: 0 2rem;
+  outline: 0;
+  border: 0;
+  border-radius: 35px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
 button {
   background: #ff2963;
   color: #fff;
@@ -80,7 +95,8 @@ button {
   border: 0;
   outline: 0;
   cursor: pointer;
-  height: 2.5rem;
+  height: 1.5rem;
+  margin-bottom: 5%;
 }
 
 button:hover {
@@ -89,17 +105,11 @@ button:hover {
   transition: 0.2s;
 }
 
-select {
-  flex: 1;
-  color: #fff;
-  background: #403d84;
-  height: 3rem;
-  padding: 0 2rem;
-  outline: 0;
-  border: 0;
-  border-radius: 35px;
+.row_button {
+  display: flex;
+  flex-direction: column;
 }
 
-select:hover {
-  cursor: pointer;
+mark {
+  background-color: #ff2963;
 }

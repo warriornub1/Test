@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yongy\\source\\repos\\LINQ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\users\\yongy\\source\\repos\\linq\\selectmany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:selectmany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\users\\yongy\\source\\repos\\linq\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\users\\yongy\\source\\repos\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SelectMany.cs",
+              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\LINQ\\SelectMany.cs",
+              "RelativeDocumentMoniker": "SelectMany.cs",
+              "ToolTip": "C:\\Users\\yongy\\source\\repos\\LINQ\\SelectMany.cs",
+              "RelativeToolTip": "SelectMany.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwDAAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:12:11.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\LINQ\\Student.cs",
+              "RelativeDocumentMoniker": "Student.cs",
+              "ToolTip": "C:\\Users\\yongy\\source\\repos\\LINQ\\Student.cs",
+              "RelativeToolTip": "Student.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwBwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:08:43.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\LINQ\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\yongy\\source\\repos\\LINQ\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:08:02.394Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

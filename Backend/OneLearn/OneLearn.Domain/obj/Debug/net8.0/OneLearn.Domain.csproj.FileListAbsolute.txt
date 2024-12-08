@@ -1,0 +1,11 @@
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\bin\Debug\net8.0\OneLearn.Domain.deps.json
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\bin\Debug\net8.0\OneLearn.Domain.dll
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\bin\Debug\net8.0\OneLearn.Domain.pdb
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.AssemblyInfoInputs.cache
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.AssemblyInfo.cs
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.csproj.CoreCompileInputs.cache
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.dll
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\obj\Debug\net8.0\refint\OneLearn.Domain.dll
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.pdb
+C:\Users\yongy\source\repos\OneLearn\OneLearn.Domain\obj\Debug\net8.0\ref\OneLearn.Domain.dll

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorXUnit", "CalculatorXUnit.csproj", "{B6FEDDDC-4325-4EB7-8D8E-87C6D359E13C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\Domain\Domain.csproj", "{A1FCEB22-AB88-4FE4-B231-7D52AF1CCCD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web1", "..\Web1\Web1.csproj", "{12CF4F0F-68DF-40F1-8EBA-48765EEA89AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6FEDDDC-4325-4EB7-8D8E-87C6D359E13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FEDDDC-4325-4EB7-8D8E-87C6D359E13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FEDDDC-4325-4EB7-8D8E-87C6D359E13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FEDDDC-4325-4EB7-8D8E-87C6D359E13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1FCEB22-AB88-4FE4-B231-7D52AF1CCCD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FCEB22-AB88-4FE4-B231-7D52AF1CCCD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FCEB22-AB88-4FE4-B231-7D52AF1CCCD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FCEB22-AB88-4FE4-B231-7D52AF1CCCD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12CF4F0F-68DF-40F1-8EBA-48765EEA89AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12CF4F0F-68DF-40F1-8EBA-48765EEA89AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12CF4F0F-68DF-40F1-8EBA-48765EEA89AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12CF4F0F-68DF-40F1-8EBA-48765EEA89AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF53CF88-2510-4148-AC2E-460D548068E3}
+	EndGlobalSection
+EndGlobal
