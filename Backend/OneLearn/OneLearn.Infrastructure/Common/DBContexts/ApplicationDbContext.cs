@@ -16,8 +16,11 @@ namespace OneLearn.Infrastructure.Common.DBContexts
 
             modelBuilder.Entity<Language>()
                 .HasIndex(x => new { x.language, x.language_Code }).IsUnique();
+
+            modelBuilder.Entity<Passage>();
         }
 
         public DbSet<Language> Language { get; set; }
+        public DbSet<Passage> Passages { get; set; }
     }
 }

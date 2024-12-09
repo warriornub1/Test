@@ -59,6 +59,40 @@ namespace OneLearn.Infrastructure.Migrations
 
                     b.ToTable("Language");
                 });
+
+            modelBuilder.Entity("OneLearn.Domain.Transactions.VoiceTranslation.Passage", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("created_by")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("created_on")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("langauge_id")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("last_modified_by")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("last_modified_on")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("passage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Passages");
+                });
 #pragma warning restore 612, 618
         }
     }

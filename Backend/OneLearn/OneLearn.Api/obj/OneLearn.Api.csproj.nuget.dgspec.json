@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yongy\\source\\repos\\OneLearn.Api\\OneLearn.Api.csproj": {}
+    "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yongy\\source\\repos\\OneLearn.Api\\OneLearn.Api.csproj": {
+    "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yongy\\source\\repos\\OneLearn.Api\\OneLearn.Api.csproj",
+        "projectUniqueName": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj",
         "projectName": "OneLearn.Api",
-        "projectPath": "C:\\Users\\yongy\\source\\repos\\OneLearn.Api\\OneLearn.Api.csproj",
+        "projectPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj",
         "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yongy\\source\\repos\\OneLearn.Api\\obj\\",
+        "outputPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
-                "projectPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj"
+              "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
+                "projectPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj"
               },
-              "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj"
+              "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj": {
+                "projectPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
+    "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
+        "projectUniqueName": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
         "projectName": "OneLearn.Application",
-        "projectPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
+        "projectPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
         "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\obj\\",
+        "outputPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,8 +116,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
-                "projectPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
+              "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
+                "projectPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
               }
             }
           }
@@ -166,14 +166,14 @@
         }
       }
     },
-    "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
+    "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj",
+        "projectUniqueName": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj",
         "projectName": "OneLearn.Domain",
-        "projectPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj",
+        "projectPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj",
         "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Domain\\obj\\",
+        "outputPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -227,14 +227,14 @@
         }
       }
     },
-    "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj": {
+    "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj",
         "projectName": "OneLearn.Infrastructure",
-        "projectPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj",
+        "projectPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Infrastructure\\obj\\",
+        "outputPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -252,11 +252,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
-                "projectPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj"
+              "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
+                "projectPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj"
               },
-              "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
-                "projectPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
+              "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
+                "projectPath": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
               }
             }
           }

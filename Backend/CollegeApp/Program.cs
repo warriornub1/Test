@@ -1,3 +1,4 @@
+using CollegeApp.Configuration;
 using CollegeApp.Data;
 using CollegeApp.MyLogging;
 using Microsoft.EntityFrameworkCore;
@@ -31,6 +32,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// add auto mapper
+builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 
 // https://www.youtube.com/watch?v=Pb2VZWoHSnA&ab_channel=PatrickGod
 builder.Services.AddScoped<IMyLogger, LogToFile>();

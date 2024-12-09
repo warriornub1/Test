@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OneLearn\OneLearn.Application\OneLearn.Application.csproj" />
-    <ProjectReference Include="..\OneLearn\OneLearn.Infrastructure\OneLearn.Infrastructure.csproj" />
+    <ProjectReference Include="..\OneLearn.Application\OneLearn.Application.csproj" />
+    <ProjectReference Include="..\OneLearn.Infrastructure\OneLearn.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

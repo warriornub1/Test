@@ -5,36 +5,17 @@ let textarea = document.querySelector("textarea");
 let textContainer = document.getElementById("text-container");
 let play_button = document.querySelector("#play");
 let clear_button = document.querySelector("#clear");
+let save_button = document.querySelector("#save");
 
 let isPaused = false; // Track whether the speech is paused
 let isPlaying = false; // Track whether the speech is currently playing
 let language = {};
 let allowedLanguageCode = [];
 
-const apiUrl = "http://localhost:5087/Language/";
-
-// // Send GET request
-// function getAllowedLanguagesCodes(callback) {
-//   fetch(apiUrl + "GetAllLanguages")
-//     .then((response) => {
-//       if (!response.ok)
-//         throw new Error(`HTTP error! Status: ${response.status}`);
-//       return response.json();
-//     })
-//     .then((data) => {
-//       allowedLanguageCode = data.map((item) => item.language_Code);
-//       console.log("Allowed Language Codes:", allowedLanguageCode);
-//       callback();
-//     });
-// }
-
-// getAllowedLanguagesCodes(() => {
-//   // Now you can access allowedLanguageCode outside of fetch
-//   console.log("Using allowedLanguageCode outside fetch:", allowedLanguageCode);
-// });
+const apiUrl = "http://localhost:5087";
 
 const fetchLanguages = async () => {
-  const data1 = await fetch(apiUrl + "GetAllLanguages");
+  const data1 = await fetch(apiUrl + "/Language/GetAllLanguages");
   const response1 = await data1.json();
   allowedLanguageCode = response1.map((item) => item.language_Code);
 };
@@ -147,3 +128,19 @@ speech.onboundary = (event) => {
 speech.onend = () => {
   textarea.innerHTML = speech.text;
 };
+
+const saveText = async () => {
+  const text = textarea.value;
+  const response = await fetch(apiUrl + "/Passage/CreatePassage", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      language_id: 1,
+      passage: text,
+    }),
+  });
+};
+
+save_button.addEventListener("click", saveText);

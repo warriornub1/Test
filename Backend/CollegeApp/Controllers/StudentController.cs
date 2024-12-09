@@ -1,4 +1,5 @@
-﻿using CollegeApp.Data;
+﻿using AutoMapper;
+using CollegeApp.Data;
 using CollegeApp.Model;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -14,10 +15,12 @@ namespace CollegeApp.Controllers
 
         private readonly ILogger<DemoController> _logger;
         private readonly CollegeDBContext _dbContext;
-        public StudentController(ILogger<DemoController> logger, CollegeDBContext dbContext)
+        private readonly IMapper _mapper;
+        public StudentController(ILogger<DemoController> logger, CollegeDBContext dbContext, IMapper mapper)
         {
             _logger = logger;
             _dbContext = dbContext;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -37,7 +40,11 @@ namespace CollegeApp.Controllers
             //    Address = s.Address,
             //    Email = s.Email,
             //}).ToList();
-            return Ok(students);
+
+            //return Ok(students);
+
+            var studentDTOData = _mapper.Map<List<StudentDTO>>(students);
+            return Ok(studentDTOData);
         }
 
         [HttpGet]
@@ -69,7 +76,9 @@ namespace CollegeApp.Controllers
                 Address = student.Address,
             };
 
-            return Ok(studentDTO);
+            var studentDTO1 = _mapper.Map<StudentDTO>(student);
+
+            return Ok(studentDTO1);
         }
 
 
@@ -97,7 +106,9 @@ namespace CollegeApp.Controllers
                 Address = student.Address,
             };
 
-            return Ok(studentDTO);
+            var studentDTO1 = _mapper.Map<StudentDTO>(student);
+
+            return Ok(studentDTO1);
         }
 
 
@@ -223,23 +234,15 @@ namespace CollegeApp.Controllers
             if (existingStudent == null)
                 return NotFound();
 
-            var studentDTO = new StudentDTO
-            {
-                Id = existingStudent.Id,
-                StudentName = existingStudent.StudentName,
-                Email = existingStudent.Email,
-                Address = existingStudent.Address,
-            };
-
-            patchDocument.ApplyTo(studentDTO, ModelState);
+            var studentDTO1 = _mapper.Map<StudentDTO>(existingStudent);
+            patchDocument.ApplyTo(studentDTO1, ModelState);
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            existingStudent.StudentName = studentDTO.StudentName;
-            existingStudent.Email = studentDTO.Email;
-            existingStudent.Address = studentDTO.Address;
+            existingStudent = _mapper.Map<Student>(studentDTO1);
 
+            _dbContext.Students.Update(existingStudent);
             await _dbContext.SaveChangesAsync();
 
             return NoContent();

@@ -12,7 +12,7 @@ namespace OneLearn.Infrastructure
         {
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<ILanguageRepository, LanguageRepository>();
-
+            services.AddScoped<IPassageRepository, PassageRepository>();
             return services;
         }
     }

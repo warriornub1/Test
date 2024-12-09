@@ -9,6 +9,7 @@ namespace OneLearn.Application
         {
             //services.AddAutoMapper(typeof(MappingProfiles));
             services.AddScoped<ILanguageService, LanguageService>();
+            services.AddScoped<IPassageService, PassageService>();
             return services;
         }
     }

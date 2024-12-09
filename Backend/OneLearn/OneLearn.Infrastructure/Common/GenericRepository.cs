@@ -29,6 +29,7 @@ namespace OneLearn.Infrastructure.Common
         public async Task CreateAsync(T entity)
         {
             await _dbContext.Set<T>().AddAsync(entity);
+            await _dbContext.SaveChangesAsync();
         }
         public async Task CreateRangeAsync(IEnumerable<T> entities)
         {

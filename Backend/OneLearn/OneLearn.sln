@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneLearn.Api", "..\OneLearn.Api\OneLearn.Api.csproj", "{8C067AA0-DB02-4DCA-ABA0-05A3B89A6FAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneLearn.Application", "OneLearn.Application\OneLearn.Application.csproj", "{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneLearn.Application", "OneLearn.Application\OneLearn.Application.csproj", "{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneLearn.Infrastructure", "OneLearn.Infrastructure\OneLearn.Infrastructure.csproj", "{B325D5BF-2B83-4FB4-93DC-E7D0D77DFEDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneLearn.Infrastructure", "OneLearn.Infrastructure\OneLearn.Infrastructure.csproj", "{B325D5BF-2B83-4FB4-93DC-E7D0D77DFEDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneLearn.Domain", "OneLearn.Domain\OneLearn.Domain.csproj", "{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneLearn.Domain", "OneLearn.Domain\OneLearn.Domain.csproj", "{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneLearn.Api", "OneLearn.Api\OneLearn.Api.csproj", "{947D8108-813A-4166-83F4-90179F17CD36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8C067AA0-DB02-4DCA-ABA0-05A3B89A6FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C067AA0-DB02-4DCA-ABA0-05A3B89A6FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C067AA0-DB02-4DCA-ABA0-05A3B89A6FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C067AA0-DB02-4DCA-ABA0-05A3B89A6FAE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{947D8108-813A-4166-83F4-90179F17CD36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{947D8108-813A-4166-83F4-90179F17CD36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{947D8108-813A-4166-83F4-90179F17CD36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{947D8108-813A-4166-83F4-90179F17CD36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

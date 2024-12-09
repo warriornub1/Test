@@ -1,20 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yongy\\source\\repos\\OneLearn\\",
+  "WorkspaceRootPath": "C:\\Project\\Test\\Backend\\OneLearn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C067AA0-DB02-4DCA-ABA0-05A3B89A6FAE}|..\\OneLearn.Api\\OneLearn.Api.csproj|c:\\users\\yongy\\source\\repos\\onelearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|c:\\project\\test\\backend\\onelearn\\onelearn.api\\controllers\\passagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|solutionrelative:onelearn.api\\controllers\\passagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C067AA0-DB02-4DCA-ABA0-05A3B89A6FAE}|..\\OneLearn.Api\\OneLearn.Api.csproj|c:\\users\\yongy\\source\\repos\\onelearn.api\\controllers\\languagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|c:\\project\\test\\backend\\onelearn\\onelearn.api\\controllers\\languagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|solutionrelative:onelearn.api\\controllers\\languagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}|OneLearn.Application\\OneLearn.Application.csproj|c:\\users\\yongy\\source\\repos\\onelearn\\onelearn.application\\transaction\\voicetranslation\\services\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}|OneLearn.Application\\OneLearn.Application.csproj|solutionrelative:onelearn.application\\transaction\\voicetranslation\\services\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}|OneLearn.Application\\OneLearn.Application.csproj|c:\\users\\yongy\\source\\repos\\onelearn\\onelearn.application\\applicationregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}|OneLearn.Application\\OneLearn.Application.csproj|solutionrelative:onelearn.application\\applicationregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}|OneLearn.Application\\OneLearn.Application.csproj|c:\\project\\test\\backend\\onelearn\\onelearn.application\\transaction\\voicetranslation\\services\\passageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0F96E6-ABD3-490E-8D9B-A3C98A32FBC9}|OneLearn.Application\\OneLearn.Application.csproj|solutionrelative:onelearn.application\\transaction\\voicetranslation\\services\\passageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,52 +34,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\OneLearn.Api\\Program.cs",
-              "RelativeDocumentMoniker": "..\\OneLearn.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\yongy\\source\\repos\\OneLearn.Api\\Program.cs",
-              "RelativeToolTip": "..\\OneLearn.Api\\Program.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAACcAAAABAAAA",
+              "DocumentIndex": 1,
+              "Title": "LanguageController.cs",
+              "DocumentMoniker": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Api\\Controllers\\LanguageController.cs",
+              "RelativeDocumentMoniker": "OneLearn.Api\\Controllers\\LanguageController.cs",
+              "ToolTip": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Api\\Controllers\\LanguageController.cs",
+              "RelativeToolTip": "OneLearn.Api\\Controllers\\LanguageController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T10:04:28.169Z",
+              "WhenOpened": "2024-12-09T14:10:54.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\ApplicationRegistration.cs",
-              "RelativeDocumentMoniker": "OneLearn.Application\\ApplicationRegistration.cs",
-              "ToolTip": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\ApplicationRegistration.cs",
-              "RelativeToolTip": "OneLearn.Application\\ApplicationRegistration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABAAAAA",
+              "DocumentIndex": 0,
+              "Title": "PassageController.cs",
+              "DocumentMoniker": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Api\\Controllers\\PassageController.cs",
+              "RelativeDocumentMoniker": "OneLearn.Api\\Controllers\\PassageController.cs",
+              "ToolTip": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Api\\Controllers\\PassageController.cs",
+              "RelativeToolTip": "OneLearn.Api\\Controllers\\PassageController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T09:58:53.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LanguageController.cs",
-              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\OneLearn.Api\\Controllers\\LanguageController.cs",
-              "RelativeDocumentMoniker": "..\\OneLearn.Api\\Controllers\\LanguageController.cs",
-              "ToolTip": "C:\\Users\\yongy\\source\\repos\\OneLearn.Api\\Controllers\\LanguageController.cs",
-              "RelativeToolTip": "..\\OneLearn.Api\\Controllers\\LanguageController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T09:50:07.497Z"
+              "WhenOpened": "2024-12-09T13:34:17.257Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LanguageService.cs",
-              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\Transaction\\VoiceTranslation\\Services\\LanguageService.cs",
-              "RelativeDocumentMoniker": "OneLearn.Application\\Transaction\\VoiceTranslation\\Services\\LanguageService.cs",
-              "ToolTip": "C:\\Users\\yongy\\source\\repos\\OneLearn\\OneLearn.Application\\Transaction\\VoiceTranslation\\Services\\LanguageService.cs",
-              "RelativeToolTip": "OneLearn.Application\\Transaction\\VoiceTranslation\\Services\\LanguageService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBIAAAAMAAAA",
+              "Title": "PassageService.cs",
+              "DocumentMoniker": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\Transaction\\VoiceTranslation\\Services\\PassageService.cs",
+              "RelativeDocumentMoniker": "OneLearn.Application\\Transaction\\VoiceTranslation\\Services\\PassageService.cs",
+              "ToolTip": "C:\\Project\\Test\\Backend\\OneLearn\\OneLearn.Application\\Transaction\\VoiceTranslation\\Services\\PassageService.cs",
+              "RelativeToolTip": "OneLearn.Application\\Transaction\\VoiceTranslation\\Services\\PassageService.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswBEAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T09:36:42.443Z"
+              "WhenOpened": "2024-12-09T14:13:42.331Z",
+              "EditorCaption": ""
             }
           ]
         }
