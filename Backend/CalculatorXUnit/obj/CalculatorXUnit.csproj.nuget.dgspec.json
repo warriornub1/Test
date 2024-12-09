@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\CalculatorXUnit.csproj": {}
+    "C:\\Frontend\\Test\\Backend\\CalculatorXUnit\\CalculatorXUnit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\CalculatorXUnit.csproj": {
+    "C:\\Frontend\\Test\\Backend\\CalculatorXUnit\\CalculatorXUnit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\CalculatorXUnit.csproj",
+        "projectUniqueName": "C:\\Frontend\\Test\\Backend\\CalculatorXUnit\\CalculatorXUnit.csproj",
         "projectName": "CalculatorXUnit",
-        "projectPath": "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\CalculatorXUnit.csproj",
-        "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yongy\\source\\repos\\CalculatorXUnit\\obj\\",
+        "projectPath": "C:\\Frontend\\Test\\Backend\\CalculatorXUnit\\CalculatorXUnit.csproj",
+        "packagesPath": "C:\\Users\\kahyong.chua\\.nuget\\packages\\",
+        "outputPath": "C:\\Frontend\\Test\\Backend\\CalculatorXUnit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kahyong.chua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yongy\\source\\repos\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\yongy\\source\\repos\\Domain\\Domain.csproj"
+              "C:\\Frontend\\Test\\Backend\\NetworkUtility\\NetworkUtility.csproj": {
+                "projectPath": "C:\\Frontend\\Test\\Backend\\NetworkUtility\\NetworkUtility.csproj"
               }
             }
           }
@@ -50,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -87,21 +90,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\yongy\\source\\repos\\Domain\\Domain.csproj": {
+    "C:\\Frontend\\Test\\Backend\\NetworkUtility\\NetworkUtility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yongy\\source\\repos\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "C:\\Users\\yongy\\source\\repos\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yongy\\source\\repos\\Domain\\obj\\",
+        "projectUniqueName": "C:\\Frontend\\Test\\Backend\\NetworkUtility\\NetworkUtility.csproj",
+        "projectName": "NetworkUtility",
+        "projectPath": "C:\\Frontend\\Test\\Backend\\NetworkUtility\\NetworkUtility.csproj",
+        "packagesPath": "C:\\Users\\kahyong.chua\\.nuget\\packages\\",
+        "outputPath": "C:\\Frontend\\Test\\Backend\\NetworkUtility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kahyong.chua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,7 +112,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -132,6 +134,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -148,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

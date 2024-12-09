@@ -1,4 +1,6 @@
-﻿namespace CollegeApp.Model
+﻿using CollegeApp.Data;
+
+namespace CollegeApp.Model
 {
     public static class CollegeRepository
     {

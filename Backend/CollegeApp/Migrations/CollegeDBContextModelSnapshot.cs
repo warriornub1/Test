@@ -44,6 +44,22 @@ namespace CollegeApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Students");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Address = "India",
+                            Email = "asd@gmail.com",
+                            StudentName = "Venkat"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Address = "India",
+                            Email = "asd1@gmail.com",
+                            StudentName = "Neahnth"
+                        });
                 });
 #pragma warning restore 612, 618
         }

@@ -5896,19 +5896,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yongy\\.nuget\\packages\\": {}
+    "C:\\Users\\kahyong.chua\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\Test\\CollegeApp\\CollegeApp.csproj",
+      "projectUniqueName": "C:\\Frontend\\Test\\Backend\\CollegeApp\\CollegeApp.csproj",
       "projectName": "CollegeApp",
-      "projectPath": "C:\\Project\\Test\\CollegeApp\\CollegeApp.csproj",
-      "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\Test\\CollegeApp\\obj\\",
+      "projectPath": "C:\\Frontend\\Test\\Backend\\CollegeApp\\CollegeApp.csproj",
+      "packagesPath": "C:\\Users\\kahyong.chua\\.nuget\\packages\\",
+      "outputPath": "C:\\Frontend\\Test\\Backend\\CollegeApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kahyong.chua\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5916,7 +5916,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6004,7 +6003,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

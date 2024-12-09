@@ -19,12 +19,12 @@ builder.Logging.AddDebug();
 
 builder.Services.AddDbContext<CollegeDBContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnectionOffice"));
 });
 
 // Add services to the container.
 
-builder.Services.AddControllers(options => options.ReturnHttpNotAcceptable = true).AddNewtonsoftJson();
+builder.Services.AddControllers();
 
 //.AddXmlDataContractSerializerFormatters();
 
