@@ -1,5 +1,6 @@
 using CollegeApp.Configuration;
 using CollegeApp.Data;
+using CollegeApp.Data.Repository;
 using CollegeApp.MyLogging;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -38,6 +39,8 @@ builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 
 // https://www.youtube.com/watch?v=Pb2VZWoHSnA&ab_channel=PatrickGod
 builder.Services.AddScoped<IMyLogger, LogToFile>();
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped(typeof(ICollegeRepository<>), typeof(CollegeRepository<>));
 
 var app = builder.Build();
 

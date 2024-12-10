@@ -1,0 +1,6 @@
+@DemoECommerece.SharedLibrarySolution_HostAddress = http://localhost:5111
+
+GET {{DemoECommerece.SharedLibrarySolution_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

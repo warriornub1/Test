@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using CollegeApp.Data;
+using CollegeApp.Data.Repository;
 using CollegeApp.Model;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System.Xml.Linq;
 
 namespace CollegeApp.Controllers
@@ -14,13 +16,13 @@ namespace CollegeApp.Controllers
     {
 
         private readonly ILogger<DemoController> _logger;
-        private readonly CollegeDBContext _dbContext;
         private readonly IMapper _mapper;
-        public StudentController(ILogger<DemoController> logger, CollegeDBContext dbContext, IMapper mapper)
+        private readonly IStudentRepository _studentRepository;
+        public StudentController(ILogger<DemoController> logger, IMapper mapper, IStudentRepository studentRepository)
         {
             _logger = logger;
-            _dbContext = dbContext;
             _mapper = mapper;
+            _studentRepository = studentRepository;
         }
 
         [HttpGet]
@@ -30,19 +32,7 @@ namespace CollegeApp.Controllers
         public async Task<ActionResult<IEnumerable<StudentDTO>>> GetStudents()
         {
             _logger.LogInformation("GetStudents method started");
-
-            var students = await _dbContext.Students.ToListAsync();
-
-            //var students = _dbContext.Students.Select(s => new StudentDTO()
-            //{
-            //    Id = s.Id,
-            //    StudentName = s.StudentName,
-            //    Address = s.Address,
-            //    Email = s.Email,
-            //}).ToList();
-
-            //return Ok(students);
-
+            var students = _studentRepository.GetAllAsync();
             var studentDTOData = _mapper.Map<List<StudentDTO>>(students);
             return Ok(studentDTOData);
         }
@@ -61,24 +51,16 @@ namespace CollegeApp.Controllers
                 return BadRequest();
             }
 
-            var student = await _dbContext.Students.Where(x => x.Id == id).FirstOrDefaultAsync();
+            var student = await _studentRepository.GetByIdAsync(x => x.Id == id);
             if (student == null)
             {
                 _logger.LogError("student not found with given Id");
                 return NotFound($"The student with id {id} not found.");
             }
 
-            var studentDTO = new StudentDTO
-            {
-                Id = student.Id,
-                StudentName = student.StudentName,
-                Email = student.Email,
-                Address = student.Address,
-            };
+            var studentDTO = _mapper.Map<StudentDTO>(student);
 
-            var studentDTO1 = _mapper.Map<StudentDTO>(student);
-
-            return Ok(studentDTO1);
+            return Ok(studentDTO);
         }
 
 
@@ -93,22 +75,14 @@ namespace CollegeApp.Controllers
             if(string.IsNullOrEmpty(Name))
                 return BadRequest();
 
-            var student = await _dbContext.Students.Where(x => x.StudentName == Name).FirstOrDefaultAsync();
+            var student = await _studentRepository.GetByNameAsync(x => x.StudentName == Name);
             
             if(student == null)
                 return NotFound($"The student with name {Name} not found.");
 
-            var studentDTO = new StudentDTO
-            {
-                Id = student.Id,
-                StudentName = student.StudentName,
-                Email = student.Email,
-                Address = student.Address,
-            };
+            var studentDTO = _mapper.Map<StudentDTO>(student);
 
-            var studentDTO1 = _mapper.Map<StudentDTO>(student);
-
-            return Ok(studentDTO1);
+            return Ok(studentDTO);
         }
 
 
@@ -120,15 +94,13 @@ namespace CollegeApp.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> DeleteStudent(int id)
         {
-            var student = await _dbContext.Students.Where(x => x.Id == id).FirstOrDefaultAsync();
+            var student = await _studentRepository.GetByIdAsync(x => x.Id == id);
 
             if (student == null)
                 return NotFound($"The student with id {id} not found.");
 
 
-            _dbContext.Students.Remove(student);
-            await _dbContext.SaveChangesAsync();
-
+            await _studentRepository.DeleteAsync(student);
             return Ok(student);
         }
 
@@ -155,21 +127,13 @@ namespace CollegeApp.Controllers
                 return BadRequest(ModelState);
             }
 
-            Student student = new Student
-            {
-                StudentName = model.StudentName,
-                Address = model.Address,
-                Email = model.Email,
-            };
-            await _dbContext.Students.AddAsync(student);
-            await _dbContext.SaveChangesAsync();
-
-            model.Id = student.Id;
+            var student1 = _mapper.Map<Student>(model);
+            var id = await _studentRepository.CreateAsync(student1);
 
             // Status - 201
             // api/Student/3
 
-            return CreatedAtRoute("GetStudentById", new { id = model.Id }, model);
+            return CreatedAtRoute("GetStudentById", model);
         }
 
         [HttpPut]
@@ -185,25 +149,16 @@ namespace CollegeApp.Controllers
             if (model == null || model.Id <= 0)
                 BadRequest();
 
-            var existingStudent = await _dbContext.Students.AsNoTracking().Where(x => x.Id == model.Id).FirstOrDefaultAsync();
+            //var existingStudent = await _dbContext.Students.AsNoTracking().Where(x => x.Id == model.Id).FirstOrDefaultAsync();
 
-            if(existingStudent == null)
+            var existingStudent = await _studentRepository.GetByIdAsync(x => x.Id == model.Id, true);
+            if (existingStudent == null)
                 return NotFound();
 
-            //existingStudent.StudentName = model.StudentName;
-            //existingStudent.Email = model.Email;
-            //existingStudent.Address = model.Address;
 
-            var newRecord = new Student()
-            {
-                Id = existingStudent.Id,
-                StudentName = existingStudent.StudentName,
-                Email = existingStudent.Email,
-                Address = existingStudent.Address
-            };
+            var newRecord = _mapper.Map<Student>(model);
 
-            _dbContext.Students.Update(newRecord);
-            await _dbContext.SaveChangesAsync();
+            await _studentRepository.UpdateAsync(newRecord);
             return NoContent();
         }
 
@@ -229,7 +184,7 @@ namespace CollegeApp.Controllers
             if (patchDocument == null || id <= 0)
                 return BadRequest();
 
-            var existingStudent = await _dbContext.Students.FirstOrDefaultAsync(x => x.Id == id);
+            var existingStudent = await _studentRepository.GetByIdAsync(x => x.Id == id, true);
 
             if (existingStudent == null)
                 return NotFound();
@@ -242,9 +197,7 @@ namespace CollegeApp.Controllers
 
             existingStudent = _mapper.Map<Student>(studentDTO1);
 
-            _dbContext.Students.Update(existingStudent);
-            await _dbContext.SaveChangesAsync();
-
+            await _studentRepository.UpdateAsync(existingStudent);
             return NoContent();
         }
 

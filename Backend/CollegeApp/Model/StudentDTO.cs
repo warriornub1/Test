@@ -11,7 +11,7 @@ namespace CollegeApp.Model
 
         [Required(ErrorMessage = "Student name is required")]
         [StringLength(100)]
-        public string Name { get; set; }
+        public string StudentName { get; set; }
 
         [EmailAddress(ErrorMessage = "Please enter valid email address")]
         public string Email { get; set; }
