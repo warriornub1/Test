@@ -1054,6 +1054,7 @@
       "OneLearn.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "Microsoft.Extensions.Caching.Abstractions": "9.0.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.0",
           "OneLearn.Domain": "1.0.0"
         },

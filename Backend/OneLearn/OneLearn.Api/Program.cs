@@ -27,8 +27,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
 {
-    option.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"));
+    option.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnectionWork"));
 });
+
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 
