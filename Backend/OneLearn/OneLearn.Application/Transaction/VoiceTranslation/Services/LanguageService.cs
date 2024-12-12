@@ -1,4 +1,5 @@
-﻿using OneLearn.Application.Transaction.VoiceTranslation.DTOs.Request;
+﻿using Microsoft.Extensions.Caching.Distributed;
+using OneLearn.Application.Transaction.VoiceTranslation.DTOs.Request;
 using OneLearn.Application.Transaction.VoiceTranslation.DTOs.Response;
 using OneLearn.Application.Transaction.VoiceTranslation.Interface;
 using OneLearn.Domain.Transactions.VoiceTranslation;
@@ -8,14 +9,17 @@ namespace OneLearn.Application.Transaction.VoiceTranslation.Services
     public class LanguageService : ILanguageService
     {
         private readonly ILanguageRepository _languageRepository;
+        private readonly IDistributedCache _distributedCache;
 
-        public LanguageService(ILanguageRepository languageRepository)
+        public LanguageService(ILanguageRepository languageRepository, IDistributedCache distributedCache)
         {
             _languageRepository = languageRepository;
+            _distributedCache = distributedCache;
         }
 
         public async Task<IEnumerable<GetAllLanguageResponse>> GetAllLanguagesAsync()
         {
+            _distributedCache.Get();
             return (await _languageRepository.GetAllAsync()).Select(x => new GetAllLanguageResponse
             {
                 language = x.language,

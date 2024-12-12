@@ -9,6 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddAppplicationServices();
 builder.Services.AddInfrastructureServices();
+builder.Services.AddStackExchangeRedisCache(redisOptions =>
+{
+    string connection = builder.Configuration.GetConnectionString("Redis");
+    redisOptions.Configuration = connection;
+});
 
 // Add CORS services to the container
 builder.Services.AddCors(options =>
