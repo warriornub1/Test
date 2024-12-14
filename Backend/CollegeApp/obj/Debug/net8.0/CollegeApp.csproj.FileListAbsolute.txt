@@ -394,3 +394,4 @@ C:\Frontend\Test\Backend\CollegeApp\obj\Debug\net8.0\refint\CollegeApp.dll
 C:\Frontend\Test\Backend\CollegeApp\obj\Debug\net8.0\CollegeApp.pdb
 C:\Frontend\Test\Backend\CollegeApp\obj\Debug\net8.0\CollegeApp.genruntimeconfig.cache
 C:\Frontend\Test\Backend\CollegeApp\obj\Debug\net8.0\ref\CollegeApp.dll
+C:\Frontend\Test\Backend\CollegeApp\bin\Debug\net8.0\AutoMapper.dll

@@ -5,9 +5,9 @@ using System.Reflection.Emit;
 
 namespace CollegeApp.Data.Config
 {
-    public class StudentConfig : IEntityTypeConfiguration<T>
+    public class StudentConfig : IEntityTypeConfiguration<Student>
     {
-        public void Configure(EntityTypeBuilder<T> builder)
+        public void Configure(EntityTypeBuilder<Student> builder)
         {
             builder.ToTable("Students");
             builder.HasKey(x => x.Id);
@@ -19,11 +19,16 @@ namespace CollegeApp.Data.Config
             builder.Property(x => x.Address).IsRequired(false).HasMaxLength(500);
             builder.Property(x => x.Email).IsRequired().HasMaxLength(250);
 
-            builder.HasData(new List<T>()
+            builder.HasData(new List<Student>()
             {
-                new T { Id = 1, StudentName = "Venkat", Address = "India", Email = "asd@gmail.com" },
-                new T { Id = 2, StudentName = "Neahnth", Address = "India", Email = "asd1@gmail.com" }
+                new Student { Id = 1, StudentName = "Venkat", Address = "India", Email = "asd@gmail.com" },
+                new Student { Id = 2, StudentName = "Neahnth", Address = "India", Email = "asd1@gmail.com" }
             });
+
+            builder.HasOne(n => n.Department)
+                .WithMany(n => n.Students)
+                .HasForeignKey(n => n.DepartmentId)
+                .HasConstraintName("FK_Students_Department");
         }
     }
 }

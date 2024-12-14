@@ -41,6 +41,31 @@ builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 builder.Services.AddScoped<IMyLogger, LogToFile>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped(typeof(ICollegeRepository<>), typeof(CollegeRepository<>));
+builder.Services.AddCors(options => {
+
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+    //options.AddPolicy("AllowAll", policy =>
+    //{
+    //    policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    //});
+    options.AddPolicy("AllowOnlyLocalhost", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().WithHeaders("Accept").WithMethods("GET", "");
+    });
+
+    options.AddPolicy("AllowOnlyGoogle", policy =>
+    {
+        policy.WithOrigins("http://google.com;http://gmail.com;http://drive.google.com").AllowAnyHeader().AllowAnyMethod();
+    });
+
+    options.AddPolicy("AllowOnlyMicrosoft", policy =>
+    {
+        policy.WithOrigins("http://outlook.com;http://microsoft.com;http://onedrive.com").AllowAnyHeader().AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 
@@ -51,6 +76,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// use before UseAuthorization and after Routing
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
