@@ -1,6 +1,7 @@
 ﻿using OneLearn.Application.Transaction.VoiceTranslation.Services;
 using Microsoft.Extensions.DependencyInjection;
 using OneLearn.Application.Common;
+using OneLearn.Api.Extensions;
 
 namespace OneLearn.Application
 {
@@ -11,6 +12,7 @@ namespace OneLearn.Application
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddScoped<ILanguageService, LanguageService>();
             services.AddScoped<IPassageService, PassageService>();
+            services.AddScoped<IRedisCacheService, RedisCacheService>();
             return services;
         }
     }

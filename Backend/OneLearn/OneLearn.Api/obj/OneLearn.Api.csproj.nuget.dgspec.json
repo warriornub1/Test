@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj": {}
+    "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj": {}
   },
   "projects": {
-    "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj": {
+    "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj",
+        "projectUniqueName": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj",
         "projectName": "OneLearn.Api",
-        "projectPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj",
-        "packagesPath": "C:\\Users\\kahyong.chua\\.nuget\\packages\\",
-        "outputPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Api\\obj\\",
+        "projectPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Api\\OneLearn.Api.csproj",
+        "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kahyong.chua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +22,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
-                "projectPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj"
+              "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
+                "projectPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj"
               },
-              "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj": {
-                "projectPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj"
+              "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj": {
+                "projectPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj"
               }
             }
           }
@@ -66,6 +67,18 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.20.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.22, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -90,21 +103,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
+    "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
+        "projectUniqueName": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
         "projectName": "OneLearn.Application",
-        "projectPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
-        "packagesPath": "C:\\Users\\kahyong.chua\\.nuget\\packages\\",
-        "outputPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Application\\obj\\",
+        "projectPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
+        "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kahyong.chua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,14 +125,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
-                "projectPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
+              "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
+                "projectPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
               }
             }
           }
@@ -168,21 +182,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
+    "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj",
+        "projectUniqueName": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj",
         "projectName": "OneLearn.Domain",
-        "projectPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj",
-        "packagesPath": "C:\\Users\\kahyong.chua\\.nuget\\packages\\",
-        "outputPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Domain\\obj\\",
+        "projectPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj",
+        "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kahyong.chua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -190,6 +204,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -228,21 +243,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj": {
+    "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj",
         "projectName": "OneLearn.Infrastructure",
-        "projectPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\kahyong.chua\\.nuget\\packages\\",
-        "outputPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\obj\\",
+        "projectPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kahyong.chua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -250,17 +265,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
-                "projectPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj"
+              "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj": {
+                "projectPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj"
               },
-              "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
-                "projectPath": "C:\\Frontend\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
+              "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
+                "projectPath": "C:\\Project\\Test\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
               }
             }
           }
@@ -311,7 +327,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

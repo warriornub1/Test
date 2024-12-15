@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneLearn.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be76b4318313c2f43e30ec91d65069467a8b0bd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2091318b59d64a1b7183bb73315431fdc8728fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneLearn.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneLearn.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,8 +2,12 @@ using CollegeApp.Configuration;
 using CollegeApp.Data;
 using CollegeApp.Data.Repository;
 using CollegeApp.MyLogging;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Serilog;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +25,7 @@ builder.Logging.AddDebug();
 
 builder.Services.AddDbContext<CollegeDBContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnectionOffice"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnection"));
 });
 
 // Add services to the container.
@@ -32,7 +36,34 @@ builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "JWT Authorization header using the bearer scheme. Enter Bearer [space] add your token in the text input. Example: Bear asd123",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Scheme = "Bearer"
+    });
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement()
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Id = "Bearer",
+                    Type = ReferenceType.SecurityScheme
+                },
+                Scheme = "oauth2",
+
+                Name = "Bearer",
+                In = ParameterLocation.Header
+            },
+            new List<string>()
+        }
+    });
+});
 
 // add auto mapper
 builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
@@ -65,6 +96,52 @@ builder.Services.AddCors(options => {
     {
         policy.WithOrigins("http://outlook.com;http://microsoft.com;http://onedrive.com").AllowAnyHeader().AllowAnyMethod();
     });
+});
+
+
+var KeyJWTSecretforGoogle = Encoding.ASCII.GetBytes(builder.Configuration.GetValue<string>("JWTSecretforGoogle"));
+var KeyJWTSecretforMicrosoft = Encoding.ASCII.GetBytes(builder.Configuration.GetValue<string>("JWTSecretforMicrosoft"));
+var KeyJWTSecretforLocal = Encoding.ASCII.GetBytes(builder.Configuration.GetValue<string>("JWTSecretforLocal"));
+
+
+//JWT Authentication Configuration
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer("LoginorGoogleUsers", options =>
+{
+    //options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(KeyJWTSecretforGoogle),
+        ValidateIssuer = false,
+        ValidateAudience = false,
+    };
+}).AddJwtBearer("LoginForMicrosoftUsers", options =>
+{
+    //options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(KeyJWTSecretforMicrosoft),
+        ValidateIssuer = false,
+        ValidateAudience = false,
+    };
+}).AddJwtBearer("LoginForLocalUsers", options =>
+{
+    //options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(KeyJWTSecretforLocal),
+        ValidateIssuer = false,
+        ValidateAudience = false,
+    };
 });
 
 var app = builder.Build();

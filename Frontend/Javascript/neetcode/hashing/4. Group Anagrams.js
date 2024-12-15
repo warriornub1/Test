@@ -1,16 +1,42 @@
-// https://www.youtube.com/watch?v=WalLC8nlrPk&ab_channel=AlgoJS
+// charCodeAt() Unicode values are integers representing characters in the Unicode standard.
+/*
+const str = "Hello";
+console.log(str.charCodeAt(0)); // 72 ('H')
+console.log(str.charCodeAt(1)); // 101 ('e')
+console.log(str.charCodeAt(4)); // 111 ('o')
+*/
 
 function groupAnagrams(strs) {
-  let sorted = strs.map((str) => str.split("").sort().join(""));
-
-  let map = {};
-
-  for (let i = 0; i < sorted.length; i++) {
-    if (!map[sorted[i]]) map[sorted[i]] = [strs[i]];
-    else map[sorted[i]].push(strs[i]);
+  let hashmap = {};
+  for (let word of strs) {
+    let key = word.split("").sort().join("");
+    if (!hashmap[key]) {
+      hashmap[key] = [];
+    }
+    hashmap[key].push(word);
   }
-
-  return Object.values(map);
+  return Object.values(hashmap);
 }
 
-groupAnagrams(["act", "pots", "tops", "cat", "stop", "hat"]);
+function groupAnagrams1(strs) {
+  const map = {};
+  for (let word of strs) {
+    const key = new Array(26).fill(0);
+    for (let s of word) {
+      key[s.charCodeAt(0) - "a".charCodeAt(0)] += 1;
+    }
+    if (!map[key]) map[key] = [];
+    map[key].push(word);
+    return Object.values(map);
+  }
+}
+
+let result = groupAnagrams(["act", "pots", "tops", "cat", "stop", "hat"]);
+let result1 = groupAnagrams(["act", "pots", "tops", "cat", "stop", "hat"]);
+
+result.forEach(print);
+result1.forEach(print);
+
+function print(element) {
+  console.log(element);
+}

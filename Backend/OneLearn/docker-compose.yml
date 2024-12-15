@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  onelearn.api:
+    image: ${DOCKER_REGISTRY-}onelearnapi
+    container_name: onelearn.api
+    build:
+      context: .
+      dockerfile: OneLearn.Api/Dockerfile
+    ports:
+        - "5000:5000"
+  onelearn.database:
+        image: postgres:latest
+        container_name: onelearn.database
+        environment: 
+          - POSTGRES_DB=onelearn
+          - POSTGRES_USER=postgres
+          - POSTGRES_PASSWORD=postgres
+        volumes:
+          - ./.containers/onelearn-db:/var/lib/postgressql.data
+        ports:
+          - 5432:5432
+  
+  
