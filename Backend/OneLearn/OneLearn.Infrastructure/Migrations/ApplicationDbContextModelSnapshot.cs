@@ -22,6 +22,291 @@ namespace OneLearn.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("OneLearn.Domain.Test.Test", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("a")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("b")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("c")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("created_by")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("created_on")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("d")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("e")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("f")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("g")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("h")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("i")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("j")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("k")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("l")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("last_modified_by")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("last_modified_on")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("m")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("n")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Tests");
+
+                    b.HasData(
+                        new
+                        {
+                            id = 1,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        },
+                        new
+                        {
+                            id = 2,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        },
+                        new
+                        {
+                            id = 3,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        },
+                        new
+                        {
+                            id = 4,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        },
+                        new
+                        {
+                            id = 5,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        },
+                        new
+                        {
+                            id = 6,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        },
+                        new
+                        {
+                            id = 7,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        },
+                        new
+                        {
+                            id = 8,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        },
+                        new
+                        {
+                            id = 9,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        },
+                        new
+                        {
+                            id = 10,
+                            a = "a",
+                            b = "b",
+                            c = "c",
+                            created_by = "asd",
+                            created_on = new DateTime(2024, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            d = "d",
+                            e = "e",
+                            f = "f",
+                            g = "g",
+                            h = "h",
+                            i = "i",
+                            j = "j",
+                            k = "k",
+                            l = "l",
+                            m = "m",
+                            n = "n"
+                        });
+                });
+
             modelBuilder.Entity("OneLearn.Domain.Transactions.VoiceTranslation.Language", b =>
                 {
                     b.Property<int>("id")

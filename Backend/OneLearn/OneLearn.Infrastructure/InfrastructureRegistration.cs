@@ -1,7 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using OneLearn.Application.Common;
+using OneLearn.Application.Tests.Interface;
 using OneLearn.Application.Transaction.VoiceTranslation.Interface;
 using OneLearn.Infrastructure.Common;
+using OneLearn.Infrastructure.Tests;
 using OneLearn.Infrastructure.Transactions.VoiceTranslation;
 
 namespace OneLearn.Infrastructure
@@ -13,6 +15,7 @@ namespace OneLearn.Infrastructure
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<ILanguageRepository, LanguageRepository>();
             services.AddScoped<IPassageRepository, PassageRepository>();
+            services.AddScoped<ITestRepository, TestRepository>();
             return services;
         }
     }

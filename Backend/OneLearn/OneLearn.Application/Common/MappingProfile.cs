@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using OneLearn.Application.Tests.DTOs.Request;
 using OneLearn.Application.Transaction.VoiceTranslation.DTOs.Response;
+using OneLearn.Domain.Test;
 using OneLearn.Domain.Transactions.VoiceTranslation;
 
 namespace OneLearn.Application.Common
@@ -9,6 +11,7 @@ namespace OneLearn.Application.Common
         public MappingProfile() 
         {
             CreateMap<GetAllPassageResponse, Passage>().ReverseMap();
+            CreateMap<UpdateTestDto, Test>().ReverseMap();
         }
     }
 }
