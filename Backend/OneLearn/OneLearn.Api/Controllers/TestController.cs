@@ -17,29 +17,60 @@ namespace OneLearn.Api.Controllers
             _testService = testService;
         }
         [HttpPut]
-        public async Task<IActionResult> UpdateTest(int id, [FromBody] UpdateTestDto request)
+        public async Task<IActionResult> UpdateTest([FromBody] UpdateMultipleTest request)
         {
-            await _testService.UpdateTestAsync(id, request);
+            await _testService.UpdateTestAsync(request);
             return Ok();
         }
 
-        [HttpPatch]
+        /*
+         [
+          {
+            "path": "/studentName",
+            "op": "replace",
+            "value": "Anil New"
+          }
+        ]
+        */
+        [HttpPatch("{id:int}")]
+
         public async Task<IActionResult> UpdateTestPatch(int id, [FromBody] JsonPatchDocument<UpdateTestDto> patchDocument)
         {
             await _testService.UpdatePatchTestAsync(id, patchDocument);
             return Ok();
         }
 
-        //[HttpPut]
-        //public async Task<IActionResult> UpdateMultiple()
-        //{
+        [HttpPut]
+        public async Task<IActionResult> UpdateTestMultiple([FromBody] List<UpdateMultipleTest> requests)
+        {
+            await _testService.UpdateTestMultipleAsync(requests);
+            return Ok();
+        }
 
-        //}
+        /*
+         [
+            {
+                "id": 3,
+                "patchDocument": [
+                    { "op": "replace", "path": "/a", "value": "Updated Name 1" },
+                    { "op": "replace", "path": "/b", "value": "30" }
+                ]
+            },
+            {
+                "id": 4,
+                "patchDocument": [
+                    { "op": "replace", "path": "/c", "value": "Updated Name 2" },
+                    { "op": "replace", "path": "/d", "value": "40" }
+                ]
+            }
+        ]
+         */
 
-        //[HttpPatch]
-        //public async Task<IActionResult> UpdateMultiplePatch()
-        //{
-
-        //}
+        [HttpPatch]
+        public async Task<IActionResult> UpdateMultiplePatch([FromBody] List<UpdateMultipleTestPatch> updates)
+        {
+            await _testService.BulkUpdatePatchAsync(updates);
+            return Ok();
+        }
     }
 }

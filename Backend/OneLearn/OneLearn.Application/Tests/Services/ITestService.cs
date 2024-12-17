@@ -5,7 +5,9 @@ namespace OneLearn.Application.Tests.Services
 {
     public interface ITestService
     {
-        Task UpdateTestAsync(int id, UpdateTestDto request);
+        Task UpdateTestAsync(UpdateMultipleTest request);
         Task UpdatePatchTestAsync(int id, JsonPatchDocument<UpdateTestDto> patch);
+        Task UpdateTestMultipleAsync(List<UpdateMultipleTest> requests);
+        Task BulkUpdatePatchAsync(List<UpdateMultipleTestPatch> updates);
     }
 }

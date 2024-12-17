@@ -43,6 +43,7 @@ namespace OneLearn.Infrastructure.Common
         public async Task UpdateRangeAsAsync(IEnumerable<T> entities)
         {
             await Task.Run(() => _dbContext.Set<T>().UpdateRange(entities));
+            await _dbContext.SaveChangesAsync();
         }
         public async Task DeleteAsync(T entity)
         {

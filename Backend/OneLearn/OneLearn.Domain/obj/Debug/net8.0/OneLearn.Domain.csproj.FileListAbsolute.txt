@@ -46,3 +46,4 @@ C:\Project\Test\Test\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\refint\On
 C:\Project\Test\Test\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.pdb
 C:\Project\Test\Test\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\ref\OneLearn.Domain.dll
 C:\Project\Test\Test\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.csproj.AssemblyReference.cache
+C:\Frontend\Test\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.csproj.AssemblyReference.cache

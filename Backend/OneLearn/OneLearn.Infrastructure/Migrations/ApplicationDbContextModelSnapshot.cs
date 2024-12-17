@@ -86,8 +86,8 @@ namespace OneLearn.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("last_modified_by")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("last_modified_by")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("last_modified_on")
                         .HasColumnType("datetime2");
@@ -331,8 +331,8 @@ namespace OneLearn.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime?>("last_modified_by")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("last_modified_by")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("last_modified_on")
                         .HasColumnType("datetime2");
@@ -364,8 +364,8 @@ namespace OneLearn.Infrastructure.Migrations
                     b.Property<int>("langauge_id")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("last_modified_by")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("last_modified_by")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("last_modified_on")
                         .HasColumnType("datetime2");
