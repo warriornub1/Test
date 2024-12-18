@@ -13,5 +13,6 @@ namespace OneLearn.Application.Transaction.VoiceTranslation.Services
         Task<IEnumerable<GetAllPassageResponse>> GetAllPassageAsync();
 
         Task CreatePassageAsync(string userId, CreatePassageRequest request);
+        Task<GetPassageRequest> GetPassageByIdAsync(int id);
     }
 }

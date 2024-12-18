@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneLearn.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6b06cb557ea4c8c5a17f79c79c56d954c085a1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a7762ec9e9954774b02cfd277f788fd78237580")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneLearn.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneLearn.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

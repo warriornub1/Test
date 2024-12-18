@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using LINQ.Hashing;
+
+// ContainsDuplicate cd = new ContainsDuplicate();
+
+IsAnagram anagram = new IsAnagram();
+
+//GroupAnagram groupAnagram = new GroupAnagram();

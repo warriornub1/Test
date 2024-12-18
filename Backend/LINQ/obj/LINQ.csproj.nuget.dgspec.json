@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yongy\\source\\repos\\LINQ\\LINQ.csproj": {}
+    "C:\\Project\\Backend\\LINQ\\LINQ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yongy\\source\\repos\\LINQ\\LINQ.csproj": {
+    "C:\\Project\\Backend\\LINQ\\LINQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yongy\\source\\repos\\LINQ\\LINQ.csproj",
+        "projectUniqueName": "C:\\Project\\Backend\\LINQ\\LINQ.csproj",
         "projectName": "LINQ",
-        "projectPath": "C:\\Users\\yongy\\source\\repos\\LINQ\\LINQ.csproj",
+        "projectPath": "C:\\Project\\Backend\\LINQ\\LINQ.csproj",
         "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yongy\\source\\repos\\LINQ\\obj\\",
+        "outputPath": "C:\\Project\\Backend\\LINQ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",

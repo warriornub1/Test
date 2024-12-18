@@ -10,7 +10,7 @@ namespace OneLearn.Application.Common
     {
         public MappingProfile() 
         {
-            CreateMap<GetAllPassageResponse, Passage>().ReverseMap();
+            CreateMap<GetPassageRequest, Passage>().ReverseMap();
             CreateMap<UpdateTestDto, Test>().ReverseMap();
         }
     }

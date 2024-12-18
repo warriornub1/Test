@@ -39,7 +39,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
 {
-    option.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnectionWork"));
+    option.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"));
 });
 
 builder.Services.AddMemoryCache();

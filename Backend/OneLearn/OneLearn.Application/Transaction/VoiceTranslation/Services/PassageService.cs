@@ -12,55 +12,27 @@ namespace OneLearn.Application.Transaction.VoiceTranslation.Services
         private readonly IPassageRepository _passageRepository;
         private readonly ILanguageRepository _languageRepository;
         private readonly IMapper _mapper;
-        private static readonly SemaphoreSlim semaphore = new SemaphoreSlim(1, 1);
-        private readonly IMemoryCache _cache;
-        private readonly string cacheKey = "passageCacheKey";
 
-        public PassageService(IPassageRepository passageRepository, ILanguageRepository languageRepository, IMapper mapper, IMemoryCache cache)
+        public PassageService(IPassageRepository passageRepository, ILanguageRepository languageRepository, IMapper mapper)
         {
             _languageRepository = languageRepository;
             _passageRepository = passageRepository;
             _mapper = mapper;
-            _cache = cache;
         }
 
         public async Task<IEnumerable<GetAllPassageResponse>> GetAllPassageAsync()
         {
             // https://www.youtube.com/watch?v=2jj2wH60QuE
             // https://www.youtube.com/watch?v=KSRlVOgVxyI
-            if (_cache.TryGetValue(cacheKey, out IEnumerable<GetAllPassageResponse> passageDTO))
+            var passage = await _passageRepository.GetAllAsync();
+            var response = passage.Select(x => new GetAllPassageResponse
             {
-                // Log message
-            }
-            else
-            {
-                try
-                {
-                    await semaphore.WaitAsync();
-                    if(_cache.TryGetValue(cacheKey, out passageDTO))
-                    {
-                        // Log "Employee found in cache"
-                    }
-                    else
-                    {
-                        var passage = await _passageRepository.GetAllAsync();
-                        passageDTO = _mapper.Map<List<GetAllPassageResponse>>(passage);
-
-                        var cacheEntryOptions = new MemoryCacheEntryOptions()
-                                .SetSlidingExpiration(TimeSpan.FromSeconds(60)) // How long before the cache is remove from memory
-                                .SetAbsoluteExpiration(TimeSpan.FromHours(1)) // It will expire regardless of whether anyone access
-                                .SetPriority(CacheItemPriority.Normal); // Set priority when it will be remove from the cache
-
-                        _cache.Set(cacheKey, passageDTO, cacheEntryOptions);
-                    }
-                }
-                finally
-                {
-                    semaphore.Release();
-                }
-            }
-
-            return passageDTO;
+                langauge_id = x.langauge_id,
+                title = x.passage.Length >= 5 ? x.passage.Substring(0, 5) : x.passage,
+                passage = x.passage
+            });
+                       
+            return response;
         }
 
         public async Task CreatePassageAsync(string userId, CreatePassageRequest request)
@@ -77,5 +49,12 @@ namespace OneLearn.Application.Transaction.VoiceTranslation.Services
             });
 
         }
+
+        public async Task<GetPassageRequest> GetPassageByIdAsync(int id)
+        {
+            var passagedB = await _passageRepository.GetByIdAsync(x => x.id == id);
+            return _mapper.Map<GetPassageRequest>(passagedB);
+        }
+
     }
 }

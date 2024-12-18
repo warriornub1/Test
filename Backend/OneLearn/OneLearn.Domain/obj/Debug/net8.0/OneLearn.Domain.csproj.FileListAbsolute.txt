@@ -47,3 +47,16 @@ C:\Project\Test\Test\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.
 C:\Project\Test\Test\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\ref\OneLearn.Domain.dll
 C:\Project\Test\Test\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.csproj.AssemblyReference.cache
 C:\Frontend\Test\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.csproj.AssemblyReference.cache
+C:\Project\Backend\OneLearn\OneLearn.Domain\bin\Debug\net8.0\OneLearn.Domain.deps.json
+C:\Project\Backend\OneLearn\OneLearn.Domain\bin\Debug\net8.0\OneLearn.Domain.dll
+C:\Project\Backend\OneLearn\OneLearn.Domain\bin\Debug\net8.0\OneLearn.Domain.pdb
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.csproj.AssemblyReference.cache
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.AssemblyInfoInputs.cache
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.AssemblyInfo.cs
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.csproj.CoreCompileInputs.cache
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.sourcelink.json
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.dll
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\refint\OneLearn.Domain.dll
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\OneLearn.Domain.pdb
+C:\Project\Backend\OneLearn\OneLearn.Domain\obj\Debug\net8.0\ref\OneLearn.Domain.dll

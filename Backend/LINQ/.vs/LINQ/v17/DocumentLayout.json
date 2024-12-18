@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yongy\\source\\repos\\LINQ\\",
+  "WorkspaceRootPath": "C:\\Project\\Backend\\LINQ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\users\\yongy\\source\\repos\\linq\\selectmany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:selectmany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\hashing\\isanagram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:hashing\\isanagram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\users\\yongy\\source\\repos\\linq\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\users\\yongy\\source\\repos\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\hashing\\containsduplicate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:hashing\\containsduplicate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,40 +33,64 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SelectMany.cs",
-              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\LINQ\\SelectMany.cs",
-              "RelativeDocumentMoniker": "SelectMany.cs",
-              "ToolTip": "C:\\Users\\yongy\\source\\repos\\LINQ\\SelectMany.cs",
-              "RelativeToolTip": "SelectMany.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwDAAAABbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:12:11.155Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\LINQ\\Student.cs",
-              "RelativeDocumentMoniker": "Student.cs",
-              "ToolTip": "C:\\Users\\yongy\\source\\repos\\LINQ\\Student.cs",
-              "RelativeToolTip": "Student.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwBwAAAAgAAAA",
+              "DocumentIndex": 0,
+              "Title": "IsAnagram.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\LINQ\\Hashing\\IsAnagram.cs",
+              "RelativeDocumentMoniker": "Hashing\\IsAnagram.cs",
+              "ToolTip": "C:\\Project\\Backend\\LINQ\\Hashing\\IsAnagram.cs",
+              "RelativeToolTip": "Hashing\\IsAnagram.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwB8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:08:43.319Z",
+              "WhenOpened": "2024-12-18T11:20:53.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ContainsDuplicate.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\LINQ\\Hashing\\ContainsDuplicate.cs",
+              "RelativeDocumentMoniker": "Hashing\\ContainsDuplicate.cs",
+              "ToolTip": "C:\\Project\\Backend\\LINQ\\Hashing\\ContainsDuplicate.cs",
+              "RelativeToolTip": "Hashing\\ContainsDuplicate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T12:04:36.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\yongy\\source\\repos\\LINQ\\Program.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\LINQ\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\yongy\\source\\repos\\LINQ\\Program.cs",
+              "ToolTip": "C:\\Project\\Backend\\LINQ\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T16:08:02.394Z",
               "EditorCaption": ""

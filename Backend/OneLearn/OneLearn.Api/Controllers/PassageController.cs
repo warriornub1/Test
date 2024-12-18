@@ -25,6 +25,14 @@ namespace OneLearn.Api.Controllers
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetPassageById(int id)
+        {
+            var result = await _passageService.GetPassageByIdAsync(id);
+            return Ok(result);
+        }
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpPost]
         public async Task<IActionResult> CreatePassage([FromBody] CreatePassageRequest request)
         {
