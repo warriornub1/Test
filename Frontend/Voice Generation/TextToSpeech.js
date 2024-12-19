@@ -144,3 +144,16 @@ const saveText = async () => {
 };
 
 save_button.addEventListener("click", saveText);
+
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const id = getQueryParam("id");
+  fetch(apiUrl + `/Passage/GetPassageById/${id}`)
+    .then((response) => response.json())
+    .then((data) => (textarea.textContent = data.passage))
+    .catch((error) => console.error("Error:", error));
+});

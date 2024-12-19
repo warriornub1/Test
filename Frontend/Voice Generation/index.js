@@ -14,7 +14,7 @@ const getAllPassage = async () => {
         <p>${d.passage}</p>
       `;
       passageDiv.addEventListener("click", () => {
-        document.location.href = "TextToSpeech.html";
+        document.location.href = `TextToSpeech.html?id=${d.id}`;
       });
       passageContainer.appendChild(passageDiv);
     });
