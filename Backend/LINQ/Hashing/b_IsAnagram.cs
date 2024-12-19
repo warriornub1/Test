@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace LINQ.Hashing
 {
-    public class IsAnagram
+    public class b_IsAnagram
     {
 
-        public IsAnagram()
+        public b_IsAnagram()
         {
             string s = "racecar";
             string t = "carrace";
 
-            string s1 = "jar";
-            string t1 = "jam";
+            string s1 = "aa";
+            string t1 = "aaa";
 
             Console.WriteLine("\nSorting");
             Console.WriteLine(Sorting(s, t));
@@ -30,7 +30,6 @@ namespace LINQ.Hashing
             Console.WriteLine(HashTable1(s1, t1));
 
         }
-
 
         public bool Sorting(string s, string t)
         {
@@ -49,12 +48,12 @@ namespace LINQ.Hashing
 
         public bool HashTable(string s, string t)
         {
-            if(s.Length != t.Length) return false;
+            if (s.Length != t.Length) return false;
 
             Dictionary<char, int> hashS = new Dictionary<char, int>();
             Dictionary<char, int> hashT = new Dictionary<char, int>();
 
-            for(int i = 0; i < s.Length; i++)
+            for (int i = 0; i < s.Length; i++)
             {
                 hashS[s[i]] = hashS.GetValueOrDefault(s[i], 0) + 1;
                 hashT[s[i]] = hashT.GetValueOrDefault(t[i], 0) + 1;
@@ -70,13 +69,13 @@ namespace LINQ.Hashing
                 return false;
 
             int[] key = new int[26];
-            for(int i = 0; i < s.Length; i++)
+            for (int i = 0; i < s.Length; i++)
             {
                 key[s[i] - 'a']++;
                 key[t[i] - 'a']--;
             }
 
-            return key.All(x =>  x == 0);
+            return key.All(x => x == 0);
         }
     }
 }

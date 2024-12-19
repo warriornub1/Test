@@ -27,6 +27,7 @@ namespace OneLearn.Application.Transaction.VoiceTranslation.Services
             var passage = await _passageRepository.GetAllAsync();
             var response = passage.Select(x => new GetAllPassageResponse
             {
+                id = x.id,
                 langauge_id = x.langauge_id,
                 title = x.passage.Length >= 5 ? x.passage.Substring(0, 5) : x.passage,
                 passage = x.passage

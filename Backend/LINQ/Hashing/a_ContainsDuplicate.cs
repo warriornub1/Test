@@ -1,8 +1,8 @@
 ﻿namespace LINQ.Hashing
 {
-    public class ContainsDuplicate
+    public class a_ContainsDuplicate
     {
-        public ContainsDuplicate()
+        public a_ContainsDuplicate()
         {
             int[] nums1 = { 1, 2, 3, 3 };
             int[] nums2 = { 1, 2, 3, 4 };

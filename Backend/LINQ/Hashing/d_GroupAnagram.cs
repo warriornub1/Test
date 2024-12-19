@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LINQ.Hashing
 {
-    public class GroupAnagram
+    public class d_GroupAnagram
     {
-        public GroupAnagram()
+        public d_GroupAnagram()
         {
             string[] strs = { "act", "pots", "tops", "cat", "stop", "hat" };
             Console.WriteLine("\nGroupAnagrams");

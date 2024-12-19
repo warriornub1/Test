@@ -2,6 +2,6 @@
 
 // ContainsDuplicate cd = new ContainsDuplicate();
 
-IsAnagram anagram = new IsAnagram();
+b_IsAnagram anagram = new b_IsAnagram();
 
 //GroupAnagram groupAnagram = new GroupAnagram();
