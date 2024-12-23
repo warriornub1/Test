@@ -1,7 +1,4 @@
 ﻿using LINQ.Hashing;
 
-// ContainsDuplicate cd = new ContainsDuplicate();
-
-b_IsAnagram anagram = new b_IsAnagram();
-
-//GroupAnagram groupAnagram = new GroupAnagram();
+b_IsAnagram b = new b_IsAnagram();
+d_GroupAnagram d = new d_GroupAnagram();

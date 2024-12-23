@@ -20,11 +20,13 @@ namespace CollegeApp.Controllers
         private readonly ILogger<DemoController> _logger;
         private readonly IMapper _mapper;
         private readonly IStudentRepository _studentRepository;
+        private APIResponse _apiResponse;
         public StudentController(ILogger<DemoController> logger, IMapper mapper, IStudentRepository studentRepository)
         {
             _logger = logger;
             _mapper = mapper;
             _studentRepository = studentRepository;
+            _apiResponse = new();
         }
 
         [HttpGet]
@@ -34,12 +36,25 @@ namespace CollegeApp.Controllers
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [Route("All", Name = "GetAllStudents")]
         //[AllowAnonymous]
-        public async Task<ActionResult<IEnumerable<StudentDTO>>> GetStudents()
+        public async Task<ActionResult<APIResponse>> GetStudents()
         {
-            _logger.LogInformation("GetStudents method started");
-            var students = _studentRepository.GetAllAsync();
-            var studentDTOData = _mapper.Map<List<StudentDTO>>(students);
-            return Ok(studentDTOData);
+            try
+            {
+                _logger.LogInformation("GetStudents method started");
+                var students = await _studentRepository.GetAllAsync();
+                _apiResponse.Data = _mapper.Map<List<StudentDTO>>(students);
+                _apiResponse.Status = true;
+                _apiResponse.StatusCode = System.Net.HttpStatusCode.OK;
+                return Ok(_apiResponse);
+
+            }
+            catch(Exception ex)
+            {
+                _apiResponse.Errors.Add(ex.Message);
+                _apiResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                _apiResponse.Status = false;
+                return _apiResponse;
+            }
         }
 
         [HttpGet]

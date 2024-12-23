@@ -23,14 +23,7 @@ namespace OneLearn.Application.Transaction.VoiceTranslation.Services
         public async Task<IEnumerable<GetAllLanguageResponse>> GetAllLanguagesAsync()
         {
             // Check if data is already in the cache
-            var cachedData = _redisCacheService.GetData<IEnumerable<GetAllLanguageResponse>>(LanguageCacheKey);
-            if (LanguageCacheKey is not null)
-            {
-                return cachedData;
-            }
-
             var dBRecord = await _languageRepository.GetAllAsync();
-            _redisCacheService.SetData("AllLanguagesCache", dBRecord);
             return dBRecord.Select(x => new GetAllLanguageResponse
             {
                 language = x.language,

@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
 using OneLearn.Application.Tests.DTOs.Request;
 using OneLearn.Application.Tests.Interface;
 using OneLearn.Domain.Test;
@@ -11,10 +13,12 @@ namespace OneLearn.Application.Tests.Services
     {
         private readonly ITestRepository _testRepository;
         private readonly IMapper _mapper;
-        public TestService(ITestRepository testRepository, IMapper mapper)
+        private readonly IDistributedCache _cache;
+        public TestService(ITestRepository testRepository, IMapper mapper, IDistributedCache cache)
         {
             _testRepository = testRepository;
             _mapper = mapper;
+            _cache = cache;
         }
 
         public async Task UpdateTestAsync(UpdateMultipleTest request)
@@ -188,6 +192,27 @@ namespace OneLearn.Application.Tests.Services
 
             // Perform a bulk update
             await _testRepository.UpdateRangeAsAsync(updatedEntities);
+        }
+
+        public async Task<IEnumerable<Test>> GetTest()
+        {
+            string key = "test";
+            string? cachedMember = await _cache.GetStringAsync(key);
+            IEnumerable<Test> tests;
+            if (string.IsNullOrEmpty(cachedMember))
+            {
+                tests = await _testRepository.GetAllAsync();
+                if (tests is null)
+                    return tests;
+                else
+                {
+                    await _cache.SetStringAsync(key, JsonConvert.SerializeObject(tests));
+                    return tests;
+                }
+
+            }
+            tests = JsonConvert.DeserializeObject<IEnumerable<Test>>(cachedMember);
+            return tests;
         }
     }
 }

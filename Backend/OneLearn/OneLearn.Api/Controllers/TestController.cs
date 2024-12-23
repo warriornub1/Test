@@ -1,6 +1,7 @@
 ﻿using Azure.Core;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Writers;
 using OneLearn.Application.Tests.DTOs.Request;
 using OneLearn.Application.Tests.Services;
 
@@ -71,6 +72,13 @@ namespace OneLearn.Api.Controllers
         {
             await _testService.BulkUpdatePatchAsync(updates);
             return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetTest()
+        {
+            var result = await _testService.GetTest();
+            return Ok(result);
         }
     }
 }

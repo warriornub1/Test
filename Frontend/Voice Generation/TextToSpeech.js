@@ -15,28 +15,29 @@ let allowedLanguageCode = [];
 const apiUrl = "http://localhost:5087";
 
 const fetchLanguages = async () => {
+  console.log("Fetching " + apiUrl + "/Language/GetAllLanguages");
   const data1 = await fetch(apiUrl + "/Language/GetAllLanguages");
   const response1 = await data1.json();
+  console.log(response1);
+
   allowedLanguageCode = response1.map((item) => item.language_Code);
 };
+
 fetchLanguages();
 
 function loadVoices() {
   voices = window.speechSynthesis.getVoices();
-  voices = voices.filter((voice) =>
-    allowedLanguageCode.some((lang) => voice.lang.startsWith(lang))
-  );
 
-  if (voices.length) {
-    speech.voice = voices[0];
-    voiceSelect.innerHTML = ""; // Clear existing options
-    voices.forEach((voice, i) => {
-      voiceSelect.options[i] = new Option(voice.name, i);
-    });
-  } else {
-    // If voices are not available yet, retry after a short delay
-    setTimeout(loadVoices, 100);
+  if (allowedLanguageCode.length) {
+    voices = voices.filter((voice) =>
+      allowedLanguageCode.some((lang) => voice.lang.startsWith(lang))
+    );
   }
+  speech.voice = voices[0];
+  voiceSelect.innerHTML = ""; // Clear existing options
+  voices.forEach((voice, i) => {
+    voiceSelect.options[i] = new Option(voice.name, i);
+  });
 }
 
 loadVoices();
@@ -96,7 +97,6 @@ window.addEventListener("beforeunload", () => {
 });
 
 speech.onboundary = (event) => {
-  console.log("Boundary triggered:");
   const text = speech.text;
   const boundaryIndex = event.charIndex;
 

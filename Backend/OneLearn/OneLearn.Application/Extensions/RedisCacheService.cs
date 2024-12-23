@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace OneLearn.Api.Extensions
 {
-    public class RedisCacheService : IRedisCacheService
+    public class   RedisCacheService : IRedisCacheService
     {
         private readonly IDistributedCache? _cache;
         public RedisCacheService(IDistributedCache? cache) 

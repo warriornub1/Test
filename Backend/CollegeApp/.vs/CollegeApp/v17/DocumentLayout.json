@@ -1,34 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Frontend\\Test\\Backend\\CollegeApp\\",
+  "WorkspaceRootPath": "C:\\Project\\Backend\\CollegeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\frontend\\test\\backend\\collegeapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\project\\backend\\collegeapp\\model\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:model\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\project\\backend\\collegeapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\frontend\\test\\backend\\collegeapp\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\frontend\\test\\backend\\collegeapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\frontend\\test\\backend\\collegeapp\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\frontend\\test\\backend\\collegeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\project\\backend\\collegeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\frontend\\test\\backend\\collegeapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\project\\backend\\collegeapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\frontend\\test\\backend\\collegeapp\\configuration\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:configuration\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\project\\backend\\collegeapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\project\\backend\\collegeapp\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|c:\\project\\backend\\collegeapp\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD4266EF-EAAC-4C10-B809-7607D6FAC67B}|CollegeApp.csproj|solutionrelative:controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +38,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -62,99 +70,98 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "APIResponse.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\CollegeApp\\Model\\APIResponse.cs",
+              "RelativeDocumentMoniker": "Model\\APIResponse.cs",
+              "ToolTip": "C:\\Project\\Backend\\CollegeApp\\Model\\APIResponse.cs",
+              "RelativeToolTip": "Model\\APIResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T14:12:49.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\CollegeApp\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Project\\Backend\\CollegeApp\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwCYAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T13:52:41.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Project\\Backend\\CollegeApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Project\\Backend\\CollegeApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-23T13:46:26.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\CollegeApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Project\\Backend\\CollegeApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAGoAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T05:30:11.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ValuesController.cs",
-              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Controllers\\ValuesController.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\CollegeApp\\Controllers\\ValuesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ValuesController.cs",
-              "ToolTip": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Controllers\\ValuesController.cs",
+              "ToolTip": "C:\\Project\\Backend\\CollegeApp\\Controllers\\ValuesController.cs",
               "RelativeToolTip": "Controllers\\ValuesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T05:33:40.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DemoController.cs",
-              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Controllers\\DemoController.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\CollegeApp\\Controllers\\DemoController.cs",
               "RelativeDocumentMoniker": "Controllers\\DemoController.cs",
-              "ToolTip": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Controllers\\DemoController.cs",
+              "ToolTip": "C:\\Project\\Backend\\CollegeApp\\Controllers\\DemoController.cs",
               "RelativeToolTip": "Controllers\\DemoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T05:33:28.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Controllers\\LoginController.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\CollegeApp\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Project\\Backend\\CollegeApp\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAYwCkAAAAQAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAwwEYAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T05:11:47.698Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAHkAAAAAAAAAAADgv4UAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T05:30:11.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\CollegeApp\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Frontend\\Test\\Backend\\CollegeApp\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-14T08:27:52.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AQIAALAAAAAAAAAAAAAuwLoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T04:10:00.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AutoMapperConfig.cs",
-              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Configuration\\AutoMapperConfig.cs",
-              "RelativeDocumentMoniker": "Configuration\\AutoMapperConfig.cs",
-              "ToolTip": "C:\\Frontend\\Test\\Backend\\CollegeApp\\Configuration\\AutoMapperConfig.cs",
-              "RelativeToolTip": "Configuration\\AutoMapperConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T05:55:34.985Z"
             }
           ]
         }
