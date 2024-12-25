@@ -8,6 +8,14 @@ namespace LINQ.Hashing
 {
     public class e_TopKElements
     {
+        public e_TopKElements()
+        {
+            int[] nums = { 4, 4, 4, 3, 3, 2 };
+            int[] result = TopKFrequent(nums, 2);
+            Console.WriteLine("Top K Elements : " + string.Join(", ", result));
+        }
+
+
         public int[] TopKFrequent(int[] nums, int k)
         {
             Dictionary<int, int> count = new Dictionary<int, int>();

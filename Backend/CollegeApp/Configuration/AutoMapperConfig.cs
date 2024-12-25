@@ -15,6 +15,7 @@ namespace CollegeApp.Configuration
 
             // Config for different property names
             CreateMap<StudentDTO, Student>().ReverseMap();
+            CreateMap<RoleDTO, Role>().ReverseMap();
 
             // Config for different property names
             //CreateMap<StudentDTO, Student>().ForMember(x => x.StudentName, opt => opt.MapFrom(x => x.Name)).ReverseMap();

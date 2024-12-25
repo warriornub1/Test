@@ -1,15 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Frontend\\Test\\Backend\\DemoECommerece.SharedLibrarySolution\\",
+  "WorkspaceRootPath": "C:\\Project\\Backend\\DemoECommerece.SharedLibrarySolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2852DABA-044E-4B0A-84F8-EB0D5361DB55}|..\\eCommerce.SharedLibrary\\eCommerce.SharedLibrary.csproj|c:\\frontend\\test\\backend\\ecommerce.sharedlibrary\\dependencyinjection\\jwtauthenticationscheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2852DABA-044E-4B0A-84F8-EB0D5361DB55}|..\\eCommerce.SharedLibrary\\eCommerce.SharedLibrary.csproj|c:\\project\\backend\\ecommerce.sharedlibrary\\dependencyinjection\\jwtauthenticationscheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2852DABA-044E-4B0A-84F8-EB0D5361DB55}|..\\eCommerce.SharedLibrary\\eCommerce.SharedLibrary.csproj|c:\\frontend\\test\\backend\\ecommerce.sharedlibrary\\middleware\\listentoonlyapigateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2852DABA-044E-4B0A-84F8-EB0D5361DB55}|..\\eCommerce.SharedLibrary\\eCommerce.SharedLibrary.csproj|c:\\frontend\\test\\backend\\ecommerce.sharedlibrary\\middleware\\globalexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\ListenToOnlyApiGateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\GlobalException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,8 +22,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -42,43 +53,56 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "JWTAuthenticationScheme.cs",
-              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
               "RelativeDocumentMoniker": "..\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
-              "ToolTip": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
+              "ToolTip": "C:\\Project\\Backend\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
               "RelativeToolTip": "..\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T05:10:30.59Z",
+              "WhenOpened": "2024-12-25T08:45:58.073Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ListenToOnlyApiGateway.cs",
-              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\ListenToOnlyApiGateway.cs",
-              "RelativeDocumentMoniker": "..\\eCommerce.SharedLibrary\\Middleware\\ListenToOnlyApiGateway.cs",
-              "ToolTip": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\ListenToOnlyApiGateway.cs",
-              "RelativeToolTip": "..\\eCommerce.SharedLibrary\\Middleware\\ListenToOnlyApiGateway.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAkAAAA",
+              "Title": "JWTAuthenticationScheme.cs",
+              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
+              "ToolTip": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
+              "RelativeToolTip": "..\\..\\..\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\DependencyInjection\\JWTAuthenticationScheme.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T05:06:09.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T05:10:30.59Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ListenToOnlyApiGateway.cs",
+              "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\ListenToOnlyApiGateway.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\ListenToOnlyApiGateway.cs",
+              "ToolTip": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\ListenToOnlyApiGateway.cs",
+              "RelativeToolTip": "..\\..\\..\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\ListenToOnlyApiGateway.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:06:09.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GlobalException.cs",
               "DocumentMoniker": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\GlobalException.cs",
-              "RelativeDocumentMoniker": "..\\eCommerce.SharedLibrary\\Middleware\\GlobalException.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\GlobalException.cs",
               "ToolTip": "C:\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\GlobalException.cs",
-              "RelativeToolTip": "..\\eCommerce.SharedLibrary\\Middleware\\GlobalException.cs",
+              "RelativeToolTip": "..\\..\\..\\Frontend\\Test\\Backend\\eCommerce.SharedLibrary\\Middleware\\GlobalException.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAqwDQAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T04:20:47.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T04:20:47.057Z"
             }
           ]
         }
