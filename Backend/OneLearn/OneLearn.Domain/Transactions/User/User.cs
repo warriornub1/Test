@@ -14,7 +14,8 @@ namespace OneLearn.Domain.Transactions.User
         public int UserTypeId { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
-        public UserType UserType { get; set; }
-        public ICollection<UserRole> UserRoles { get; set; }
+
+        //public UserType UserType { get; set; }
+        //public ICollection<UserRole> UserRoles { get; set; }
     }
 }

@@ -523,19 +523,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yongy\\.nuget\\packages\\": {}
+    "C:\\Users\\kahyong.chua\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
+      "projectUniqueName": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
       "projectName": "OneLearn.Application",
-      "projectPath": "C:\\Project\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
-      "packagesPath": "C:\\Users\\yongy\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\Backend\\OneLearn\\OneLearn.Application\\obj\\",
+      "projectPath": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Application\\OneLearn.Application.csproj",
+      "packagesPath": "C:\\Users\\kahyong.chua\\.nuget\\packages\\",
+      "outputPath": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\yongy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kahyong.chua\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -543,15 +543,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Project\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
-              "projectPath": "C:\\Project\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
+            "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj": {
+              "projectPath": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Domain\\OneLearn.Domain.csproj"
             }
           }
         }
@@ -612,7 +611,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

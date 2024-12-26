@@ -16,3 +16,6 @@ using LINQ.Stack;
 
 // stack
 a_ValidParenthesis a_ValidParenthesis = new a_ValidParenthesis();
+a_NumberOfIsland a = new a_NumberOfIsland();
+b_MaxAreaOfIsland b = new b_MaxAreaOfIsland();
+

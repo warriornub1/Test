@@ -1,0 +1,20 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific folders
+.vscode/
+.vs/
+
+# Build results
+bin/
+obj/
+debug/
+release/
+
+# Auto-generated files
+*.vsidx
+*.dtbcache.v2

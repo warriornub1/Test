@@ -1,8 +1,11 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using OneLearn.Api;
 using OneLearn.Application;
 using OneLearn.Infrastructure;
 using OneLearn.Infrastructure.Common.DBContexts;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,10 +39,34 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var secretKey = Encoding.ASCII.GetBytes(builder.Configuration.GetValue<string>("JWTSecret"));
+string audience = builder.Configuration.GetValue<string>("LocalAudience");
+string issuer = builder.Configuration.GetValue<string>("LocalIssue");
+
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+}).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = issuer,
+        ValidAudience = audience,
+        IssuerSigningKey = new SymmetricSecurityKey(secretKey)
+    };
+});
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
 {
-    option.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"));
+    option.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnectionWork"));
 });
 
 builder.Services.AddMemoryCache();

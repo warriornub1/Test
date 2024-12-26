@@ -307,6 +307,212 @@ namespace OneLearn.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("OneLearn.Domain.Transactions.User.Role", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("created_by")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("created_on")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("last_modified_by")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("last_modified_on")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("OneLearn.Domain.Transactions.User.RolePrivillege", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RolePrivilegeName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("created_by")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("created_on")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("last_modified_by")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("last_modified_on")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("RolePrivileges");
+                });
+
+            modelBuilder.Entity("OneLearn.Domain.Transactions.User.User", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("created_by")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("created_on")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("last_modified_by")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("last_modified_on")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("UserTypeId");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("OneLearn.Domain.Transactions.User.UserRoleMapping", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("created_by")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("created_on")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("last_modified_by")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("last_modified_on")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("RoleId");
+
+                    b.HasIndex("UserId", "RoleId")
+                        .IsUnique();
+
+                    b.ToTable("UserRoles");
+                });
+
+            modelBuilder.Entity("OneLearn.Domain.Transactions.User.UserType", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("created_by")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("created_on")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("last_modified_by")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("last_modified_on")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("id");
+
+                    b.ToTable("UserTypes");
+                });
+
             modelBuilder.Entity("OneLearn.Domain.Transactions.VoiceTranslation.Language", b =>
                 {
                     b.Property<int>("id")
@@ -377,6 +583,39 @@ namespace OneLearn.Infrastructure.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Passages");
+                });
+
+            modelBuilder.Entity("OneLearn.Domain.Transactions.User.RolePrivillege", b =>
+                {
+                    b.HasOne("OneLearn.Domain.Transactions.User.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("OneLearn.Domain.Transactions.User.User", b =>
+                {
+                    b.HasOne("OneLearn.Domain.Transactions.User.UserType", null)
+                        .WithMany()
+                        .HasForeignKey("UserTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("OneLearn.Domain.Transactions.User.UserRoleMapping", b =>
+                {
+                    b.HasOne("OneLearn.Domain.Transactions.User.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OneLearn.Domain.Transactions.User.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

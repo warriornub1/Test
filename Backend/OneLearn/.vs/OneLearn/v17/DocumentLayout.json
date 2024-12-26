@@ -1,30 +1,31 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Project\\Backend\\OneLearn\\",
+  "WorkspaceRootPath": "C:\\Github\\Test\\Backend\\OneLearn\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|c:\\project\\backend\\onelearn\\onelearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|solutionrelative:onelearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|c:\\project\\backend\\onelearn\\onelearn.domain\\transactions\\user\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|solutionrelative:onelearn.domain\\transactions\\user\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|c:\\github\\test\\backend\\onelearn\\onelearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|solutionrelative:onelearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 54d8cd96c4ef6a439adbe009e32caec8591fc74a
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|c:\\project\\backend\\onelearn\\onelearn.domain\\transactions\\user\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|solutionrelative:onelearn.domain\\transactions\\user\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|c:\\project\\backend\\onelearn\\onelearn.domain\\transactions\\user\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|solutionrelative:onelearn.domain\\transactions\\user\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|c:\\project\\backend\\onelearn\\onelearn.domain\\transactions\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|solutionrelative:onelearn.domain\\transactions\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|c:\\project\\backend\\onelearn\\onelearn.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|c:\\github\\test\\backend\\onelearn\\onelearn.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|solutionrelative:onelearn.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B325D5BF-2B83-4FB4-93DC-E7D0D77DFEDA}|OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj|c:\\github\\test\\backend\\onelearn\\onelearn.infrastructure\\common\\dbcontexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B325D5BF-2B83-4FB4-93DC-E7D0D77DFEDA}|OneLearn.Infrastructure\\OneLearn.Infrastructure.csproj|solutionrelative:onelearn.infrastructure\\common\\dbcontexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|c:\\github\\test\\backend\\onelearn\\onelearn.domain\\transactions\\user\\roleprivillege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|solutionrelative:onelearn.domain\\transactions\\user\\roleprivillege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,15 +35,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "OneLearn.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Api\\appsettings.Development.json",
+              "RelativeToolTip": "OneLearn.Api\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-26T05:39:00.271Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Api\\Program.cs",
+              "RelativeDocumentMoniker": "OneLearn.Api\\Program.cs",
+              "ToolTip": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Api\\Program.cs",
+              "RelativeToolTip": "OneLearn.Api\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T04:16:28.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\Common\\DBContexts\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "OneLearn.Infrastructure\\Common\\DBContexts\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Infrastructure\\Common\\DBContexts\\ApplicationDbContext.cs",
+              "RelativeToolTip": "OneLearn.Infrastructure\\Common\\DBContexts\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T04:23:32.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RolePrivillege.cs",
+              "DocumentMoniker": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Domain\\Transactions\\User\\RolePrivillege.cs",
+              "RelativeDocumentMoniker": "OneLearn.Domain\\Transactions\\User\\RolePrivillege.cs",
+              "ToolTip": "C:\\Github\\Test\\Backend\\OneLearn\\OneLearn.Domain\\Transactions\\User\\RolePrivillege.cs",
+              "RelativeToolTip": "OneLearn.Domain\\Transactions\\User\\RolePrivillege.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T05:28:07.563Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -62,10 +107,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
@@ -141,6 +187,19 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-23T02:58:09.646Z"
+=======
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 123,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+>>>>>>> 54d8cd96c4ef6a439adbe009e32caec8591fc74a
             }
           ]
         }
