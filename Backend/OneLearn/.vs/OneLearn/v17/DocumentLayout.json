@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Project\\Backend\\OneLearn\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|c:\\project\\backend\\onelearn\\onelearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{947D8108-813A-4166-83F4-90179F17CD36}|OneLearn.Api\\OneLearn.Api.csproj|solutionrelative:onelearn.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|c:\\project\\backend\\onelearn\\onelearn.domain\\transactions\\user\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C7F4F23-18A3-4592-8173-3FDE23C91DC7}|OneLearn.Domain\\OneLearn.Domain.csproj|solutionrelative:onelearn.domain\\transactions\\user\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,6 +71,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\OneLearn\\OneLearn.Api\\Program.cs",
+              "RelativeDocumentMoniker": "OneLearn.Api\\Program.cs",
+              "ToolTip": "C:\\Project\\Backend\\OneLearn\\OneLearn.Api\\Program.cs",
+              "RelativeToolTip": "OneLearn.Api\\Program.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwBwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T12:44:01.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Project\\Backend\\OneLearn\\OneLearn.Domain\\Transactions\\User\\UserRole.cs",
               "RelativeDocumentMoniker": "OneLearn.Domain\\Transactions\\User\\UserRole.cs",
@@ -79,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Project\\Backend\\OneLearn\\OneLearn.Domain\\Transactions\\User\\Role.cs",
               "RelativeDocumentMoniker": "OneLearn.Domain\\Transactions\\User\\Role.cs",
@@ -87,12 +104,11 @@
               "RelativeToolTip": "OneLearn.Domain\\Transactions\\User\\Role.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T11:31:31.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T11:31:31.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserType.cs",
               "DocumentMoniker": "C:\\Project\\Backend\\OneLearn\\OneLearn.Domain\\Transactions\\User\\UserType.cs",
               "RelativeDocumentMoniker": "OneLearn.Domain\\Transactions\\User\\UserType.cs",
@@ -100,12 +116,11 @@
               "RelativeToolTip": "OneLearn.Domain\\Transactions\\User\\UserType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T11:31:01.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T11:31:01.702Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Project\\Backend\\OneLearn\\OneLearn.Domain\\Transactions\\User\\User.cs",
               "RelativeDocumentMoniker": "OneLearn.Domain\\Transactions\\User\\User.cs",
@@ -113,12 +128,11 @@
               "RelativeToolTip": "OneLearn.Domain\\Transactions\\User\\User.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAAAAkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T11:29:41.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T11:29:41.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Project\\Backend\\OneLearn\\OneLearn.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "OneLearn.Api\\appsettings.Development.json",
