@@ -20,33 +20,30 @@ namespace LINQ.Graph
 
         public int MaxAreaOfIsland1(char[][] grid)
         {
-            int row = grid.Length;
-            int col = grid[0].Length;
+            int ROWS = grid.Length;
+            int COLS = grid[0].Length;
             HashSet<(int, int)> visited = new HashSet<(int, int)>();
             int maxArea = 0;
 
             int dfs(int x, int y)
             {
-                if (x < 0 || y < 0 || x >= row || y >= col || visited.Contains((x, y)) ||
-                    grid[x][y] == '0')
-                {
+                if (x < 0 || y < 0 || x >= ROWS ||
+                    y >= COLS || visited.Contains((x, y)) || grid[x][y] == '0')
                     return 0;
-                }
 
                 visited.Add((x, y));
                 return 1 + dfs(x + 1, y) + dfs(x - 1, y) + dfs(x, y + 1) + dfs(x, y - 1);
             }
 
-            for (int i = 0; i < row; i++)
+            for (int x = 0; x < ROWS; x++)
             {
-                for (int j = 0; j < col; j++)
+                for(int y = 0; y <  COLS; y++)
                 {
-                    if (grid[i][j] == '1' && !visited.Contains((i, j)))
-                    {
-                        maxArea = int.Max(dfs(i, j), maxArea);
-                    }
+                    if (grid[x][y] == '1' && !visited.Contains((x, y)))
+                        maxArea = Math.Max( dfs(x, y), maxArea );
                 }
             }
+
             return maxArea;
         }
 

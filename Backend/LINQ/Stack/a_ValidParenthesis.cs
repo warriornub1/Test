@@ -6,9 +6,40 @@
         {
             string s1 = "([{}])"; // true
             string s2 = "[(])"; // false
-            Console.WriteLine(BruteForce(s1));
-            Console.WriteLine(BruteForce(s2));
+            Console.WriteLine(Stacks(s1));
+            Console.WriteLine(Stacks(s2));
         }
+
+        public bool Stacks(string s)
+        {
+            Dictionary<char, char> lookup = new Dictionary<char, char>()
+            {
+                {  ')', '(' },
+                {  '}', '{' },
+                {  ']', '[' }
+            };
+
+            Stack<char> ss = new Stack<char>();
+            foreach (char c in s)
+            {
+                if (lookup.ContainsKey(c) && ss.Count > 0)
+                {
+                    char param = ss.Pop();
+                    if (param != lookup[c])
+                    {
+                        return false;
+                    }
+
+                }
+                else
+                {
+                    ss.Push(c);
+                }
+
+            }
+            return ss.Count == 0;
+        }
+
         public bool BruteForce(string s)
         {
             while (s.Contains("()") || s.Contains("{}") || s.Contains("[]"))

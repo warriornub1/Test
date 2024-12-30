@@ -12,20 +12,63 @@ namespace LINQ.Graph
         public c_Walls_And_Gates()
         {
             int[][] rooms = new int[][]
-{
-            new int[] { int.MaxValue, -1, 0, int.MaxValue },
-            new int[] { int.MaxValue, int.MaxValue, int.MaxValue, -1 },
-            new int[] { int.MaxValue, -1, int.MaxValue, -1 },
-            new int[] { 0, -1, int.MaxValue, int.MaxValue }
-};
+            {
+                new int[] { int.MaxValue, -1, 0, int.MaxValue },
+                new int[] { int.MaxValue, int.MaxValue, int.MaxValue, -1 },
+                new int[] { int.MaxValue, -1, int.MaxValue, -1 },
+                new int[] { 0, -1, int.MaxValue, int.MaxValue }
+            };
 
-            var result = wallsAndGates(rooms);
+            var result = wallsAndDates1(rooms);
 
             // Print the updated grid
             foreach (var row in result)
             {
                 Console.WriteLine(string.Join(", ", row));
             }
+        }
+
+        public int[][] wallsAndDates1(int[][] rooms)
+        {
+            int ROWS = rooms.Length;
+            int COLS = rooms[0].Length;
+            Queue<(int, int)> q = new Queue<(int, int)>();
+            HashSet<(int, int)> visited = new HashSet<(int, int)>();
+
+            void bfs(int x, int y)
+            {
+                if(x < 0 || y < 0 || x >= ROWS || y >= COLS || visited.Contains((x, y)) 
+                    || rooms[x][y] == 0 || rooms[x][y] == -1)  
+                    return;
+                visited.Add((x, y) );
+                q.Enqueue((x, y));
+            }
+
+            for (int x = 0; x < ROWS; x++)
+            {
+                for (int y = 0; y < COLS; y++)
+                {
+                    if (rooms[x][y] == 0)
+                        q.Enqueue((x, y));
+;                }
+            }
+
+            int distance = 0;
+            while(q.Count > 0)
+            {
+                int qLength = q.Count;
+                for(int i = 0; i < qLength; i++)
+                {
+                    (int x, int y) = q.Dequeue();
+                    rooms[x][y] = distance;
+                    bfs(x + 1, y);
+                    bfs(x - 1, y);
+                    bfs(x, y + 1);
+                    bfs(x, y - 1);
+                }
+                distance++;
+            }
+            return rooms;
         }
 
         public int[][] wallsAndGates(int[][] rooms)

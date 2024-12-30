@@ -1,40 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Github\\Test\\Backend\\LINQ\\",
+  "WorkspaceRootPath": "C:\\Project\\Backend\\LINQ\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\stack\\a_validparenthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:stack\\a_validparenthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\hashing\\f_encoding_decoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:hashing\\f_encoding_decoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 54d8cd96c4ef6a439adbe009e32caec8591fc74a
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\backtracking\\a_subset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:backtracking\\a_subset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\github\\test\\backend\\linq\\graph\\c_walls_and_gates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:graph\\c_walls_and_gates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\github\\test\\backend\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\hashing\\f_encoding_decoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:hashing\\f_encoding_decoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\github\\test\\backend\\linq\\graph\\b_maxareaofisland.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:graph\\b_maxareaofisland.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\github\\test\\backend\\linq\\csharpbasic\\dictionarys\\queues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:csharpbasic\\dictionarys\\queues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 54d8cd96c4ef6a439adbe009e32caec8591fc74a
     }
   ],
   "DocumentGroupContainers": [
@@ -44,16 +18,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 9,
-=======
-<<<<<<< Updated upstream
-          "SelectedChildIndex": 0,
-=======
-          "SelectedChildIndex": 9,
->>>>>>> Stashed changes
->>>>>>> 54d8cd96c4ef6a439adbe009e32caec8591fc74a
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -72,74 +46,21 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Queues.cs",
-              "DocumentMoniker": "C:\\Github\\Test\\Backend\\LINQ\\CSharpBasic\\Dictionarys\\Queues.cs",
-              "RelativeDocumentMoniker": "CSharpBasic\\Dictionarys\\Queues.cs",
-              "ToolTip": "C:\\Github\\Test\\Backend\\LINQ\\CSharpBasic\\Dictionarys\\Queues.cs",
-              "RelativeToolTip": "CSharpBasic\\Dictionarys\\Queues.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T01:30:16.365Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "b_MaxAreaOfIsland.cs",
-              "DocumentMoniker": "C:\\Github\\Test\\Backend\\LINQ\\Graph\\b_MaxAreaOfIsland.cs",
-              "RelativeDocumentMoniker": "Graph\\b_MaxAreaOfIsland.cs",
-              "ToolTip": "C:\\Github\\Test\\Backend\\LINQ\\Graph\\b_MaxAreaOfIsland.cs",
-              "RelativeToolTip": "Graph\\b_MaxAreaOfIsland.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T01:39:47.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-=======
-              "DocumentIndex": 0,
-              "Title": "c_Walls_And_Gates.cs",
-              "DocumentMoniker": "C:\\Github\\Test\\Backend\\LINQ\\Graph\\c_Walls_And_Gates.cs",
-              "RelativeDocumentMoniker": "Graph\\c_Walls_And_Gates.cs",
-              "ToolTip": "C:\\Github\\Test\\Backend\\LINQ\\Graph\\c_Walls_And_Gates.cs",
-              "RelativeToolTip": "Graph\\c_Walls_And_Gates.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAqwEEAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T01:23:31.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
->>>>>>> Stashed changes
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Github\\Test\\Backend\\LINQ\\Program.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\LINQ\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Github\\Test\\Backend\\LINQ\\Program.cs",
+              "ToolTip": "C:\\Project\\Backend\\LINQ\\Program.cs",
               "RelativeToolTip": "Program.cs",
-<<<<<<< HEAD
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAABEAAABBAAAA",
-=======
-<<<<<<< Updated upstream
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
-=======
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAuAAAA",
->>>>>>> Stashed changes
->>>>>>> 54d8cd96c4ef6a439adbe009e32caec8591fc74a
+              "ViewState": "AQIAAAIAAAAAAAAAAAAIwBwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T05:55:51.889Z",
               "EditorCaption": ""
@@ -147,27 +68,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "a_ValidParenthesis.cs",
-              "DocumentMoniker": "C:\\Project\\Backend\\LINQ\\Stack\\a_ValidParenthesis.cs",
-              "RelativeDocumentMoniker": "Stack\\a_ValidParenthesis.cs",
-              "ToolTip": "C:\\Project\\Backend\\LINQ\\Stack\\a_ValidParenthesis.cs",
-              "RelativeToolTip": "Stack\\a_ValidParenthesis.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAYwCYAAAAAAAAA",
+              "Title": "a_Subset.cs",
+              "DocumentMoniker": "C:\\Project\\Backend\\LINQ\\Backtracking\\a_Subset.cs",
+              "RelativeDocumentMoniker": "Backtracking\\a_Subset.cs",
+              "ToolTip": "C:\\Project\\Backend\\LINQ\\Backtracking\\a_Subset.cs",
+              "RelativeToolTip": "Backtracking\\a_Subset.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAkwDIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T12:21:41.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "f_Encoding_Decoding.cs",
-              "DocumentMoniker": "C:\\Project\\Backend\\LINQ\\Hashing\\f_Encoding_Decoding.cs",
-              "RelativeDocumentMoniker": "Hashing\\f_Encoding_Decoding.cs",
-              "ToolTip": "C:\\Project\\Backend\\LINQ\\Hashing\\f_Encoding_Decoding.cs",
-              "RelativeToolTip": "Hashing\\f_Encoding_Decoding.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAcwDAAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T06:01:11.456Z",
+              "WhenOpened": "2024-12-29T04:21:58.572Z",
               "EditorCaption": ""
             }
           ]

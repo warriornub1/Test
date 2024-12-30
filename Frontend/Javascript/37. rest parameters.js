@@ -27,3 +27,16 @@ function sum1(x, y, ...numbers) {
   }
   return total;
 }
+
+// Create a Function to Find the Largest Number
+function findLargest(...number) {
+  let max = 0;
+  for (let number of numbers) if (number > max) max = number;
+  return max;
+}
+
+// Combine and Sort Names
+function combineNames(greetings, ...names) {
+  const sortedNames = names.sort();
+  return `${greetings} ${sortedNames.join(",")}`;
+}
