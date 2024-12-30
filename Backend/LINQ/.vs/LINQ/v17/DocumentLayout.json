@@ -3,12 +3,33 @@
   "WorkspaceRootPath": "C:\\Project\\Backend\\LINQ\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\backtracking\\a_subset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:backtracking\\a_subset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\project\\backend\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\github\\test\\backend\\linq\\hashing\\h_valid_soduku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:hashing\\h_valid_soduku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\github\\test\\backend\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\github\\test\\backend\\linq\\stack\\a_validparenthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:stack\\a_validparenthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\github\\test\\backend\\linq\\stack\\b_minimum_stack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:stack\\b_minimum_stack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|c:\\github\\test\\backend\\linq\\hashing\\f_encoding_decoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36FBA7DB-E24D-4C5F-AB59-6712A5517204}|LINQ.csproj|solutionrelative:hashing\\f_encoding_decoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 9af1c6818a0f60abbd4b65a746916c0ba9302bd7
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +39,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 9,
+=======
+          "SelectedChildIndex": 11,
+>>>>>>> 9af1c6818a0f60abbd4b65a746916c0ba9302bd7
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,10 +74,13 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
+=======
+>>>>>>> 9af1c6818a0f60abbd4b65a746916c0ba9302bd7
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
@@ -60,13 +88,18 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Project\\Backend\\LINQ\\Program.cs",
               "RelativeToolTip": "Program.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAAIAAAAAAAAAAAAIwBwAAAAKAAAA",
+=======
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+>>>>>>> 9af1c6818a0f60abbd4b65a746916c0ba9302bd7
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:55:51.889Z",
+              "WhenOpened": "2024-12-27T04:36:47.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "a_Subset.cs",
               "DocumentMoniker": "C:\\Project\\Backend\\LINQ\\Backtracking\\a_Subset.cs",
@@ -76,6 +109,55 @@
               "ViewState": "AQIAAC4AAAAAAAAAAAAkwDIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T04:21:58.572Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "a_ValidParenthesis.cs",
+              "DocumentMoniker": "C:\\Github\\Test\\Backend\\LINQ\\Stack\\a_ValidParenthesis.cs",
+              "RelativeDocumentMoniker": "Stack\\a_ValidParenthesis.cs",
+              "ToolTip": "C:\\Github\\Test\\Backend\\LINQ\\Stack\\a_ValidParenthesis.cs",
+              "RelativeToolTip": "Stack\\a_ValidParenthesis.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwA4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T04:36:47.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "b_Minimum_Stack.cs",
+              "DocumentMoniker": "C:\\Github\\Test\\Backend\\LINQ\\Stack\\b_Minimum_Stack.cs",
+              "RelativeDocumentMoniker": "Stack\\b_Minimum_Stack.cs",
+              "ToolTip": "C:\\Github\\Test\\Backend\\LINQ\\Stack\\b_Minimum_Stack.cs",
+              "RelativeToolTip": "Stack\\b_Minimum_Stack.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwCAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T04:37:41.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "f_Encoding_Decoding.cs",
+              "DocumentMoniker": "C:\\Github\\Test\\Backend\\LINQ\\Hashing\\f_Encoding_Decoding.cs",
+              "RelativeDocumentMoniker": "Hashing\\f_Encoding_Decoding.cs",
+              "ToolTip": "C:\\Github\\Test\\Backend\\LINQ\\Hashing\\f_Encoding_Decoding.cs",
+              "RelativeToolTip": "Hashing\\f_Encoding_Decoding.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAcwDAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T04:36:47.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "h_Valid_Soduku.cs",
+              "DocumentMoniker": "C:\\Github\\Test\\Backend\\LINQ\\Hashing\\h_Valid_Soduku.cs",
+              "RelativeDocumentMoniker": "Hashing\\h_Valid_Soduku.cs",
+              "ToolTip": "C:\\Github\\Test\\Backend\\LINQ\\Hashing\\h_Valid_Soduku.cs",
+              "RelativeToolTip": "Hashing\\h_Valid_Soduku.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T04:51:29.727Z",
+>>>>>>> 9af1c6818a0f60abbd4b65a746916c0ba9302bd7
               "EditorCaption": ""
             }
           ]

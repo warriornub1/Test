@@ -24,9 +24,50 @@ namespace LINQ.Hashing
             };
 
             Console.WriteLine("Valid Sudoku");
-            Console.WriteLine(isValidSudoku(validSudoku));
+            Console.WriteLine(ValidSoduku1(validSudoku));
         }
         
+        public bool ValidSoduku1(char[][] board)
+        {
+            Dictionary<int, HashSet<char>> rows = new Dictionary<int, HashSet<char>>();
+            Dictionary<int, HashSet<char>> cols = new Dictionary<int, HashSet<char>>();
+            Dictionary<(int, int), HashSet<char>> box = new Dictionary<(int, int), HashSet<char>>();
+
+            int ROW = board.Length;
+            int COL = board[0].Length;
+
+            for(int i = 0; i < ROW; i++)
+            {
+                for(int j = 0; j < COL; j++)
+                {
+                    if (board[i][j] == '.')
+                        continue;
+
+                    if (rows.ContainsKey(i) && rows[i].Contains(board[i][j]) ||
+                        cols.ContainsKey(j) && cols[j].Contains(board[i][j]) ||
+                        box.ContainsKey((i / 3, j / 3)) && box[(i / 3, j / 3)].Contains(board[i][j]))
+                        return false;
+
+                    if (!rows.ContainsKey(i))
+                        rows[i] = new HashSet<char>();
+                     rows[i].Add(board[i][j]);
+
+
+                    if (!cols.ContainsKey(j))
+                        cols[j] = new HashSet<char>();
+                    cols[j].Add(board[i][j]);
+
+
+
+                    if (!box.ContainsKey((i / 3, j / 3)))
+                        box[(i / 3, j / 3)] = new HashSet<char>();
+                    box[(i / 3, j / 3)].Add(board[i][j]);
+
+                }
+            }
+
+            return true;
+        }
 
         public bool isValidSudoku(char[][] board)
         {
