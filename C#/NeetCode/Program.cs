@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using NeetCode._1._Hashing;
+
+_2_Valid_Anagram hashing_6 = new _2_Valid_Anagram();

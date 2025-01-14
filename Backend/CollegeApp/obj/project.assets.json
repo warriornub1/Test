@@ -5730,11 +5730,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\Test\\Backend\\CollegeApp\\CollegeApp.csproj",
+      "projectUniqueName": "C:\\Github\\Backend\\CollegeApp\\CollegeApp.csproj",
       "projectName": "CollegeApp",
-      "projectPath": "C:\\Github\\Test\\Backend\\CollegeApp\\CollegeApp.csproj",
+      "projectPath": "C:\\Github\\Backend\\CollegeApp\\CollegeApp.csproj",
       "packagesPath": "C:\\Users\\kahyong.chua\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\Test\\Backend\\CollegeApp\\obj\\",
+      "outputPath": "C:\\Github\\Backend\\CollegeApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kahyong.chua\\AppData\\Roaming\\NuGet\\NuGet.Config",

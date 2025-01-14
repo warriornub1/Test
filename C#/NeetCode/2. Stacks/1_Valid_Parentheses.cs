@@ -50,6 +50,4 @@ namespace NeetCode._2._TwoPointers
             return stack.Count == 0;
         }
     }
-
-    }
 }
