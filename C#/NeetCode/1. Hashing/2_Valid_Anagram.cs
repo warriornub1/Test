@@ -17,18 +17,18 @@ namespace NeetCode._1._Hashing
             Console.WriteLine(Hashing1("jar", "jam"));
         }
 
-        public bool Sorting(string s, string t)
-        {
-            if (s.Length != t.Length)
-                return false;
+        //public bool Sorting(string s, string t)
+        //{
+        //    if (s.Length != t.Length)
+        //        return false;
 
-            char[] charS = s.ToCharArray();
-            char[] charT = t.ToCharArray();
+        //    char[] charS = s.ToCharArray();
+        //    char[] charT = t.ToCharArray();
 
 
 
-            return Array.Sort(charS).SequenceEqual( Array.Sort(charT) );
-        }
+        //    return Array.Sort(charS).SequenceEqual( Array.Sort(charT) );
+        //}
 
         public bool Hashing(string s, string t)
         {

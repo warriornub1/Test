@@ -10,14 +10,15 @@
         public List<List<string>> Sorting(string[] strs)
         {
             var res = new Dictionary<string, List<string>>();
+
             foreach (var str in strs)
             {
-                char[] charArray = str.ToCharArray();
-                Array.Sort(charArray);
-                string sortedS = new string(charArray);
-                if(!res.ContainsKey(sortedS))
-                    res[sortedS] = new List<string>();
-                res[sortedS].Add(str);
+                char[] chars = str.ToCharArray();
+                Array.Sort(chars);
+                string key = new string(chars);
+                if (!res.ContainsKey(key))
+                    res[key] = new List<string>();
+                res[key].Add(str);
             }
             return res.Values.ToList<List<string>>();
         }
@@ -25,17 +26,20 @@
         public List<List<string>> HashMap1(string[] strs)
         {
             var res = new Dictionary<string, List<string>>();
-            foreach (var s in strs)
+            foreach(string str in strs)
             {
-                int[] count = new int[26];
-                foreach(char c in s)
+                int[] key = new int[26];
+                foreach(char c in str)
                 {
-                    count[c - 'a']++;
+                    key[c - 'a']++;
                 }
-                string key = string.Join(",", count);
-                if(!res.ContainsKey(key))
-                    res[key] = new List<string>();
-                res[key].Add(s);
+                string keyStr = string.Join("", key);
+                if (!res.ContainsKey(keyStr))
+                {
+                    res[keyStr] = new List<string>();
+
+                }
+                res[keyStr].Add(str);
             }
             return res.Values.ToList<List<string>>();
         }
