@@ -14,6 +14,9 @@ import Password from "./components/6. Conditional Rendering/Password";
 import Weather from "./components/6. Conditional Rendering/Weather";
 import Style from "./components/7. Style/Style";
 import "./components/7. Style/index.css";
+import UserStatus from "./components/6. Conditional Rendering/UserStatus";
+import Greeting from "./components/6. Conditional Rendering/Greeting";
+import State from "./components/8. StateHook/State";
 
 const App = () => {
   return (
@@ -51,9 +54,14 @@ const App = () => {
         <h1>6. Conditional Rendering</h1>
         <Password isValid={true} />
         <Weather temperature={15}/>
+        <UserStatus loggedIn = {true} isAdmin={true} />
+        <Greeting timeOfDay={"morning"}/>
 
         <h1>7. Style</h1>
         <Style />
+
+        <h1>8. State</h1>
+        <State />
     </section>
   );
 };
