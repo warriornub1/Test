@@ -1,9 +1,4 @@
 import React from "react";
-import Header from "./components/Task 1/Header";
-import Footer from "./components/Task 1/Footer";
-import MainContent from "./components/Task 1/MainContent";
-import Greetings from "./components/Task 2/Greeting";
-import ProductInfo from "./components/Task 2/ProductInfo";
 import UserList from "./components/3. Maps/UserList";
 import ProductList from "./components/3. Maps/ProductList";
 import User from "./components/4. Props/User";
@@ -17,18 +12,15 @@ import "./components/7. Style/index.css";
 import UserStatus from "./components/6. Conditional Rendering/UserStatus";
 import Greeting from "./components/6. Conditional Rendering/Greeting";
 import State from "./components/8. StateHook/State";
+import StyledCard from "./components/7. Style/StyledCard";
+import ProfileCard from "./components/7. Style/ProfileCard";
+import CopyInput from "./components/9. React Portal/CopyInput";
+import Example1 from "./components/10  .useEffect/Example1";
+import Example2 from "./components/10  .useEffect/Example2";
 
 const App = () => {
   return (
     <section>
-      <h1>Task 1</h1>
-      <Header />
-      <MainContent />
-      <Footer />
-      
-      <h1>Task 2</h1>
-      <Greetings />
-      <ProductInfo />
 
       <h1>3. Maps</h1>
       <UserList />   
@@ -59,9 +51,19 @@ const App = () => {
 
         <h1>7. Style</h1>
         <Style />
+        <StyledCard />
+        <ProfileCard />
 
         <h1>8. State</h1>
         <State />
+
+        <h1>9. React Portal</h1>
+        <CopyInput />
+
+        <h1>10. useEffect</h1>
+        <Example1 />
+        <Example2 />
+
     </section>
   );
 };
