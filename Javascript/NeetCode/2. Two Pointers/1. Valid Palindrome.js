@@ -1,30 +1,35 @@
-function isAlphanumeric(char){
-    return (char >= 'a' && char <= 'z') ||
-           (char >= 'A' && char <= 'Z' ) ||
-           (char >= '0' && char <= '9');
+function IsAlpha(character){
+    return (character >= 'a' && character <= 'z') ||  
+            (character >= 'A' && character <= 'Z') ||
+            (character >= '0' && character <= '9')
 }
 
-function Reverse(s){
-    let newStr = '';
-    for (let c of s){
-        if(isAlphanumeric(c))
-            newStr += c.toLowercase();
+function BruteForce(word){
+    let res = ""
+    for(let s of word){
+        if(IsAlpha(s))
+           res += s.toLowerCase()
     }
-    return newStr === newStr.split('').reverse().join('');
+    
+    return res === res.split('').reverse().join('')
 }
 
-function twoPointers(s){
-    let l = 0, r = s.length - 1;
-
-    while(l < r){
-        while(l < r && !isAlphanumeric(s[l]))
+function TwoPointer(word){
+    let l = 0; let r = word.length - 1;
+    while( l < r ){
+        while(!IsAlpha(word[l]))
             l++
-        while(r > l && !isAlphanumeric[s[r]])
-            r--
 
-        if(s[l].toLowercase() !== s[r].toLowercase())
-            return false;
-        l++; r--;
+        while(!IsAlpha(word[r]))
+            r--
+        
+        if(word[l].toLowerCase() !== word[r].toLowerCase())
+            return false
+
+        l++;
+        r--;
     }
-    return true;
+    return true
 }
+
+console.log( TwoPointer("Was it a car or a cat I saw?") )

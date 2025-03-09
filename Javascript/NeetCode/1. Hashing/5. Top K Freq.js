@@ -32,27 +32,30 @@ function Heap(num, k){
 }
 
 function bucketSort(nums, k){
-    const count = {}
-    const freq = Array.from({ length: nums.length + 1 }, () => []);
 
-    for(const n of nums){
-        count[n] = (count[n] || 0) + 1
+    const keys = Array.from( {length :  nums.length + 1 }, ()=> [] )
+    const hashmap = {}
+
+    for(let num of nums){
+        hashmap[num] = ( hashmap[num] || 0 ) + 1;
     }
 
-    for(const n in count){
-        freq[count[n]].push(parseInt(n));
+    for(var key in hashmap){
+        keys[ hashmap[key] ].push(key)
     }
 
-    const res = [];
-    for (let i = freq.length - 1; i > 0; i--) {
-        for (const n of freq[i]) {
-            res.push(n);
-            if (res.length === k) {
-                return res;
+    let res = []
+    for(let i = keys.length - 1; i > 0; i-- ){
+        if(keys[i].length > 0){
+            
+            for(let j = 0; j < keys[i].length; j++){
+                res.push(keys[i][j])
+                if(res.length == k)
+                    return res
             }
         }
     }
 
 }
 
-console.log(bucketSort(nums = [1,2,2,3,3,3], k = 2));
+console.log(bucketSort(nums = [4,5,5,5,6,6], k = 2));
