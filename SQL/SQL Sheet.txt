@@ -1,0 +1,23 @@
+SELECT title
+FROM table
+WHERE condition = 'Y' AND condition = 'N
+
+<> 2 
+is NULL
+-----------------------------------------------------------------------------------------------------
+SELECT product_id, COUNT(*) as name
+FROM orders
+GROUP BY product_id
+ORDER BY COUNT(*) DESC
+
+------------------------------------------------------------------------------------------------------
+SELECT A.*, B.OrderID
+FROM Customer A
+INNER JOIN Orders B
+ON A.CustomerID = B.CustomerID
+
+SELECT A.*, B.OrderID
+FROM Customers A
+LEFT JOIN Order B
+ON A.CustomerID = B.CustomerID
+WHERE B.CustomerID IS NULL

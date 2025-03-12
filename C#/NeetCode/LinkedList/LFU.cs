@@ -43,6 +43,28 @@
             return node.Value;  
         }
 
+        public void Put(int key, int value)
+        {
+            if (capacity == 0)
+                return;
+
+            if (keyToNode.ContainsKey(key))
+            {
+                LFUNode node = keyToNode[key];
+                node.Value = value;
+                UpdateFrequency(node);
+                return;
+            }
+
+            if (keyToNode.Count >= capacity)
+                RemoveLFUNode();
+            
+            var newNode = new LFUNode(key, value);
+            keyToNode[key] = newNode;
+            AddToFrequencyList(newNode, 1);
+            minFreq = 1;
+        }
+
         private void UpdateFrequency(LFUNode node)
         {
             int oldFreq = node.Frequency;
@@ -61,6 +83,15 @@
             if(!freqToList.ContainsKey(freq))
                 freqToList[freq] = new LinkedList<LFUNode>();
             freqToList[freq].AddLast(node);
+        }
+
+        private void RemoveLFUNode()
+        {
+            if (!freqToList.ContainsKey(minFreq) || freqToList[minFreq].Count == 0)
+                return;
+            var nodeToRemove = freqToList[minFreq].First.Value;
+            freqToList[minFreq].RemoveFirst();
+            keyToNode.Remove(nodeToRemove.Key);
         }
     }
 }

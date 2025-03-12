@@ -10,27 +10,55 @@
             {
                 Console.WriteLine(string.Join(", ", l));
             }
-        }
-        public List<List<int>> Backtracking(List<int> list)
-        {
-            List<List<int>> res = new List<List<int>>();
-            List<int> temp = new List<int>();
 
-            void backtrack(int index)
+            var forloop = Iteration(sets);
+            foreach(var l in forloop)
             {
-                if (index >= list.Count)
+                Console.WriteLine(string.Join(", ", l));
+            }
+        }
+
+        public List<List<int>> Backtracking(List<int> sets)
+        {
+            var res = new List<List<int>>();
+            var subset = new List<int>();
+
+            void recursion(int i)
+            {
+                if( i >= sets.Count )
                 {
-                    res.Add(new List<int>(temp));
+                    res.Add(new List<int>( subset ));
                     return;
                 }
-                temp.Add(list[index]);
-                backtrack(index + 1);
-                temp.RemoveAt(temp.Count() - 1);
-                backtrack(index + 1);
+
+                subset.Add(sets[i]);
+                recursion(i + 1);
+                subset.RemoveAt(subset.Count - 1);
+                recursion(i + 1);
             }
-            backtrack(0);
+            recursion(0);
             return res;
         }
+
+        public List<List<int>> Iteration(List<int> sets)
+        {
+            var res = new List<List<int>>();
+            res.Add( new List<int>() );
+
+            foreach (int number in sets)
+            {
+                int count = res.Count;
+                for(int i = 0; i < count; i++)
+                {
+                    var subset  = new List<int> (res[i]);
+                    subset.Add(number);
+                    res.Add( subset );
+                }
+            }
+            return res;
+
+        }
+
     }
 
     
