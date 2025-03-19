@@ -1,5 +1,9 @@
 ﻿using NeetCode.Backtrack;
-using NeetCode.LinkedList;
+using NeetCode.DynamicProgamming;
+
+#region Two Pointer
+//Two_Integer_Sum_ll two_Integer_Sum_Ll = new Two_Integer_Sum_ll();
+#endregion
 
 #region LinkedList
 //LRU lru = new LRU(2);
@@ -13,6 +17,12 @@ using NeetCode.LinkedList;
 
 #region Backtrack
 // Subsets sb = new Subsets();
-CombinationSum combinationSum = new CombinationSum();
+//CombinationSum combinationSum = new CombinationSum();
+//CombinationSumII combinationSumII = new CombinationSumII();
+Permutation p = new Permutation();
+#endregion
+
+#region Dymaic Programming
+//ClimbingStairs climbingStair = new ClimbingStairs();
 #endregion
 

@@ -9,8 +9,8 @@ namespace NeetCode.TwoPointers
             string newStr = "";
             foreach (char c in s)
             {
-                if (char.IsLetterOrDigit(c))
-                    newStr += char.ToLower(c);
+                if(char.IsLetterOrDigit(c))
+                    newStr += c;
             }
 
             return newStr == new string(newStr.Reverse().ToArray());
